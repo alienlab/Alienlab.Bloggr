@@ -1,0 +1,130 @@
+----item----
+version: 1
+id: {5612AA44-E5B3-4E06-8D96-32A6731AAFAE}
+database: master
+path: /sitecore/content/Home/01-Speed-up-development-in-Sitecore
+parent: {68BB929C-AF39-4E83-9D56-B5C48B899364}
+name: 01-Speed-up-development-in-Sitecore
+master: {00000000-0000-0000-0000-000000000000}
+template: {2BDE036E-3503-4BF0-B978-213F46541B21}
+templatekey: BloggrPost
+
+----field----
+field: {0501A774-E5F8-4921-9797-E9C5F8D6B127}
+name: BloggrAuthor
+key: bloggrauthor
+content-length: 38
+
+{8C125124-0372-4607-A6F1-6E5B8F1EC0A3}
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{3CCFF50C-8317-43F4-82F7-5E919D3E4A76}
+----version----
+language: en
+version: 1
+revision: 157f3a72-0c9e-49f0-a92b-7ba682e16816
+
+----field----
+field: {246FCD64-2896-49F5-93C8-383460561EAC}
+name: BloggrText
+key: bloggrtext
+content-length: 3317
+
+<p><img alt="" src="~/media/2611AE7284F14A37B1065DD8DCFA4B0C.ashx" style="float: right;">
+There was always a problem that some of Sitecore developers experienced every day - waiting for Sitecore to re-initialize after deploying recent changes of their website during development. So typical lifecycle looked like this:</p>
+<ol>
+    <li>Modify a line in /Views/Home/Index.cshtml</li>
+    <li>Visual Studio -&gt; Deploy</li>
+    <li>Wait for deploy ends</li>
+    <li>Open http://mysite in browser</li>
+    <li>Wait for the page to load</li>
+</ol>
+<p>Depending on hardware, Sitecore version and solution configuration the last step can take from 5 seconds to 5 minutes.</p>
+<h3>SOLUTION #1: USE TWO SITECORE INSTANCES</h3>
+<p><img alt="" src="~/media/C0FF8E941BBE4779A7CCA0F6CC4B0BE9.ashx" style="float: left; margin-right: 20px;"><img alt="" src="~/media/397BFCAB63874352A90B9FDDCA73FEF9.ashx" style="float: right;">The unpleasant waiting #5 that mostly terrifies Sitecore devs is usually caused by the fact that during code deployment or configuration changes the application pool is recycled and all in-memory data caches are invalidated and therefore need to be re-populated which takes time, especially in case of using large databases with large prefetch caches.&nbsp;</p>
+<p>This effect can be reduced if to tune up prefetch caches to minimum in dev environment - this is just an improvement, not the resolution.
+</p>
+<p>To resolve the issue completely for Content Editor application, I recommend using two Sitecore instances at a time:</p>
+<ul>
+    <li>mysite-cm - for dealing with items via Content Editor and Sitecore Rocks connection ("CM")
+    </li>
+    <li>mysite - for front-end and Page Editor/Experience Explorer ("CD+CM")
+    </li>
+</ul>
+<p>As you might already have guessed, the trick is to avoid application recycles completely in the area it is not needed at all - in item management interfaces. Sitecore Rocks uses web service to get the data, so it is related to it as well.</p>
+<img alt="" src="~/media/D445AC5F4B0E41B99CFC90087369F641.ashx">
+<h4>Remark</h4>
+<p>Here is the simple instruction how to set up "CM" instance for your mysite Sitecore site:</p>
+<ol>
+    <li>Using SIM, install a Sitecore instance of the same version and same name plus "-cm" postfix
+    </li>
+    <li>Copy the ConnectionStrings.config file from the "mysite" to "mysite-cm" App_Config folder.
+    </li>
+</ol>
+<h3>SOLUTION #2: DO INDIVIDUAL FILE DEPLOYMENTS</h3>
+<p>As soon as we eliminated the waiting #5 for item editing facilities, we would still need to do something with this slowness for your mysite site as soon as you need to preview changes you did at step #1.</p>
+<p>Luckily, most often changes do not cause modification of assemblies as .cshtml files are compiled on the fly. So you can either to synchronize the file manually, or to use individual file deployment in Visual Studio: <a href="http://weblog.west-wind.com/posts/2013/May/10/Publish-Individual-Files-to-your-Server-in-Visual-Studio-20122" target="_blank" title="The link opens in new window">http://weblog.west-wind.com/posts/2013/May/10/Publish-Individual-Files-to-your-Server-in-Visual-Studio-20122</a></p>
+<p>
+As soon as it does not change binaries and configuration, the application recycle does not happen and page reloads blazingly fast.</p>
+----field----
+field: {5B6DE480-45D4-4C35-9FAF-25721FE2FF57}
+name: BloggrDescription
+key: bloggrdescription
+content-length: 322
+
+<p>There was always a problem that some of Sitecore developers experienced every day -
+waiting for Sitecore to re-initialize after deploying recent changes of their website during development.</p>
+<p>Depending on hardware, Sitecore version and solution configuration the last step can take from 5 seconds to 5 minutes.</p>
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 32
+
+Speed up development in Sitecore
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150625T204907
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+157f3a72-0c9e-49f0-a92b-7ba682e16816
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T230218:635708701387341958
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{060F7446-546F-444B-85BE-42C6C8416AF0}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

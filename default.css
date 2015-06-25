@@ -1,0 +1,46 @@
+﻿.page {
+  max-width: 1035px;
+  margin: auto;
+}
+div, p, ul, ol, li, a, b, u, i, span, div>label {
+  text-align: justify;
+  font-size: 16px;
+  font-family: 'Abel', sans-serif;
+}
+h1, h1 * {
+  font-size: 60px;
+  font-family: 'Abel', sans-serif;
+  margin: 0;
+}
+h2, h2 * {
+  font-size: 32px;  
+  font-family: 'Abel', sans-serif;
+}
+h3, h3>a {
+  font-size: 22px;
+  font-family: 'Abel', sans-serif;
+}
+a>h1, h1>a, h2>a, a>h2, h3>a, a>h3 {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  padding: 70px 20px 0 20px;
+}
+
+.feed {
+  margin: 20px;
+}
+
+.post {
+  padding: 20px;
+  max-width: 1035px;
+} 
+.scWebEditInput.scEnabledChrome, .scWebEditInput * {
+  max-width: 1015px;
+} 
+
+.footer {
+  padding-left: 20px; margin:0;
+}

@@ -1,0 +1,12 @@
+﻿@using Sitecore.Diagnostics
+@using Sitecore.Links
+@using Sitecore.Mvc
+@{
+  Layout = null;
+  var item = Sitecore.Context.Item.Axes.SelectSingleItem("ancestor-or-self::*[@@templatekey='bloggrhome']");
+  Assert.IsNotNull(item, "Cannot find an ancestor or self item based on BloggrHome template");
+}
+
+<div class="header">
+  <h1><a href="@LinkManager.GetItemUrl(item)">@Html.Sitecore().Field("BloggrTitle", item, new { DisableWebEdit = true })</a></h1>
+</div>

@@ -1,0 +1,12 @@
+﻿@using Sitecore.Diagnostics
+@using Sitecore.Mvc
+@{
+  Layout = null;
+  var item = Sitecore.Context.Item.Axes.SelectSingleItem("ancestor-or-self::*[@@templatekey='bloggrhome']");
+  Assert.IsNotNull(item, "Cannot find an ancestor or self item based on BloggrHome template");
+}
+
+<div class="footer">
+  <hr />
+  <p>@Html.Sitecore().Field("BloggrFooter", item, new { DisableWebEdit = true })</p>
+</div>

@@ -1,0 +1,26 @@
+﻿@using Sitecore.Links
+@using Sitecore.Mvc
+@{
+  Layout = null;
+}
+
+<div class="post">
+  @{
+    var item = Sitecore.Context.Item;
+
+    <h2>@Html.Sitecore().Field("__Display Name", item)</h2>
+
+    <div>
+      @if (Sitecore.Context.PageMode.IsPageEditor)
+      {
+        <span><strong>// Post description:</strong> (it is shown in the search or in news page only)</span><br />
+        @Html.Sitecore().Field("BloggrDescription", item)
+        <br />
+        <p><strong>// Post text:</strong> (it is on blog post page only)</p>
+      }
+      
+      @Html.Sitecore().Field("BloggrText", item)
+
+    </div>
+  }
+</div>

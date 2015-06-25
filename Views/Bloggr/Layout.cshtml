@@ -1,0 +1,27 @@
+﻿@using Sitecore.Mvc
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+  <title></title>
+  <link href="/default.css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+</head>
+<body><div class="page">
+  <div>
+    @Html.Sitecore().Rendering("/sitecore/layout/renderings/bloggr/header", new { Cacheable = true, Cache_VaryByData = true })
+  </div>
+  <div>
+    @Html.Sitecore().Placeholder("bloggr-content")
+  </div>
+  <div>
+    @Html.Sitecore().Rendering("/sitecore/layout/renderings/bloggr/footer", new { Cacheable = true })
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {B696753C-1B28-4DF3-BBD9-3EA7E6349AC6}
+database: master
+path: /sitecore/templates/Bloggr/BloggrPost/__Standard Values
+parent: {2BDE036E-3503-4BF0-B978-213F46541B21}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {2BDE036E-3503-4BF0-B978-213F46541B21}
+templatekey: BloggrPost
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 261
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}"><r id="{3B95BA1F-2764-466E-BADB-96F18B7E1E9B}" ph="bloggr-content" uid="{F5963F80-5936-4E7F-8D67-F26A440C8B3F}" /></d></r>
+----version----
+language: en
+version: 1
+revision: 01515f15-7f51-440d-b4ba-ede92bff3f26
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150625T210756
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+01515f15-7f51-440d-b4ba-ede92bff3f26
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T213229:635708647495259000
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
