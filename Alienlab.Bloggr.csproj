@@ -88,12 +88,20 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="UnidecodeSharpFork">
+      <HintPath>packages\UnidecodeSharpFork.1.0.0\lib\UnidecodeSharpFork.dll</HintPath>
+    </Reference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="App_Config\Include\Bloggr.config" />
+    <Content Include="App_Config\Include\Bloggr.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\BloggrContext.cs" />
+    <Compile Include="Code\BloggrFlatStructure.cs" />
+    <Compile Include="Code\EventHandler.cs" />
+    <Compile Include="Code\IBloggrStructure.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +122,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Bloggr\Components\Post.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
