@@ -5,10 +5,8 @@
 
   public interface IBloggrStructure
   {
-    bool ValidatePostLocation([NotNull] Item bloggrPost);
+    void FixPostName([NotNull] Item bloggrPost);
 
-    bool ValidatePostName([NotNull] Item bloggrPost);
-
-    bool TryToFix([NotNull] Item bloggrPost);
+    void FixPostLocation([NotNull] Item bloggrPost);
   }
 }

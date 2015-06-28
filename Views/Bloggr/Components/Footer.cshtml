@@ -3,7 +3,7 @@
 @using Sitecore.Mvc
 @{
   Layout = null;
-  var item = BloggrContext.GetBloggrHome();
+  var item = BloggrContext.GetHome();
   Assert.IsNotNull(item, "Cannot find an ancestor or self item based on BloggrHome template");
 }
 

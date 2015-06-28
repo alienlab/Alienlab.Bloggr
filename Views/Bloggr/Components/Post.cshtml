@@ -1,4 +1,5 @@
-﻿@using Sitecore.Links
+﻿@using Sitecore
+@using Sitecore.Links
 @using Sitecore.Mvc
 @{
   Layout = null;
@@ -8,7 +9,7 @@
   @{
     var item = Sitecore.Context.Item;
 
-    <h2>@Html.Sitecore().Field("__Display Name", item)</h2>
+    <h2>@Html.Sitecore().Field(FieldIDs.DisplayName.ToString(), item)</h2>
 
     <div>
       @if (Sitecore.Context.PageMode.IsPageEditor)

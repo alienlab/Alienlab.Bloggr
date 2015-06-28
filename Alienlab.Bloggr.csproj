@@ -99,8 +99,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Code\BloggrContext.cs" />
-    <Compile Include="Code\BloggrFlatStructure.cs" />
-    <Compile Include="Code\EventHandler.cs" />
+    <Compile Include="Code\BloggrNoFoldersStructure.cs" />
+    <Compile Include="Code\BloggrCreatedDateFolderStructure.cs" />
+    <Compile Include="Code\BloggrPostEventHandler.cs" />
+    <Compile Include="Code\BloggrExtensions.cs" />
+    <Compile Include="Code\BloggrCreatePostCommand.cs" />
     <Compile Include="Code\IBloggrStructure.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
