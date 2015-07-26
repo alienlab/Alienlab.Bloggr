@@ -1,0 +1,25 @@
+﻿@using Alienlab.Bloggr
+@using Sitecore.Links
+@using Sitecore.Mvc
+@{
+    Layout = null;
+}
+
+<div class="feed">
+  <h2>Posts</h2>
+  
+  @{
+    var posts = BloggrContext.GetPosts();
+    foreach (var item in posts)
+    {
+      <div>
+        <span style="margin: 0;">// @item.Statistics.Created.ToString("dd.MM.yyyy")</span>
+        <h3 style="margin-top:0;"><a href="@LinkManager.GetItemUrl(item)">@item.DisplayName</a></h3>
+        @Html.Sitecore().Field("BloggrDescription", item)
+        <div>
+          <strong><a href="@LinkManager.GetItemUrl(item)">Read more</a></strong>
+        </div>
+      </div>
+    }
+  }
+</div>
