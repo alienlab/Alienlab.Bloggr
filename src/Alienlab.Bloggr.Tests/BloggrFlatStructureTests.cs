@@ -167,7 +167,7 @@
     #region Helpers
 
     /// <summary>
-    /// /sitecore/content/Home[BloggrHome]/01-Post
+    /// /sitecore/content/Home[Bloggr Home]/01-Post
     /// </summary>
     [NotNull]
     private static Db CreateHomePost([CanBeNull] string name = null, [CanBeNull] string template = null)
@@ -176,7 +176,7 @@
 
       return new Db
       {
-        new DbTemplate(template ?? "BloggrHome", bloggrHome),
+        new DbTemplate(template ?? "Bloggr Home", bloggrHome),
         new DbItem("Home", new ID(), bloggrHome)
         {
             new DbItem(name ?? "01-Post")
@@ -185,7 +185,7 @@
     }
 
     /// <summary>
-    /// /sitecore/content/Home[BloggrHome]/Folder/01-Post
+    /// /sitecore/content/Home[Bloggr Home]/Folder/01-Post
     /// </summary>
     [NotNull]
     private static Db CreateHomeFolderPost([CanBeNull] string name = null, [CanBeNull] DbField field = null)
@@ -199,7 +199,7 @@
 
       return new Db
       {
-        new DbTemplate("BloggrHome", bloggrHome),
+        new DbTemplate("Bloggr Home", bloggrHome),
         new DbItem("Home", new ID(), bloggrHome)
         {
           new DbItem("Folder")

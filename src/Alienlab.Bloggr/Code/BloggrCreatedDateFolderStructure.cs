@@ -137,7 +137,7 @@
       Assert.ArgumentNotNull(home, "home");
       Assert.ArgumentNotNull(folderName, "folderName");
       var bloggrStructure = BloggrContext.GetPostsStructureItem(home);
-      var templateField = bloggrStructure.GetSure("BloggrFolderTemplate");
+      var templateField = bloggrStructure.GetSure("Bloggr Folder Template");
 
       var dateFolder = parent.Add(folderName, new TemplateID(new ID(templateField)));
       Assert.IsNotNull(dateFolder, "dateFolder");

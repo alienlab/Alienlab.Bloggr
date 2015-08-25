@@ -4,10 +4,10 @@
 @{
   Layout = null;
   var item = BloggrContext.GetHome();
-  Assert.IsNotNull(item, "Cannot find an ancestor or self item based on BloggrHome template");
+  Assert.IsNotNull(item, "Cannot find an ancestor or self item based on Bloggr Home template");
 }
 
 <div class="footer">
   <hr />
-  <p>@Html.Sitecore().Field("BloggrFooter", item, new { DisableWebEdit = true })</p>
+  <p>@Html.Sitecore().Field("Bloggr Footer", item, new { DisableWebEdit = true })</p>
 </div>

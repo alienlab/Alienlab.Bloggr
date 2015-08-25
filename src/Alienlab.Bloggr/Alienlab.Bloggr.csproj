@@ -45,6 +45,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Sitecore.JsonDataProvider, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Sitecore.JsonDataProvider.1.0.3\lib\Sitecore.JsonDataProvider.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\..\..\..\wwwroot\bloggr\Website\bin\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
@@ -54,6 +58,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Bloggr.config">
@@ -69,11 +74,16 @@
     <Compile Include="Code\BloggrCreatePostCommand.cs" />
     <Compile Include="Code\IBloggrStructure.cs" />
     <Compile Include="Code\BloggrInstallHook.cs" />
-    <Compile Include="Code\Templates\BloggrRootItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\MediaFiles\0\0\6\{0061968A-7B03-42DB-B3AF-F05A5CC70F6D}screen2.png" />
+    <Content Include="App_Data\MediaFiles\0\6\F\{06F1C47A-184F-458F-BCF9-954AEC61BE10}screen3.png" />
+    <Content Include="App_Data\MediaFiles\6\D\1\{6D14BF3B-57C3-43B6-B79E-CEFE5931814A}loader.gif" />
+    <Content Include="App_Data\MediaFiles\7\E\3\{7E3CF8D3-8FE4-43C7-B2C4-F682A3CA8D37}screen1.png" />
+    <Content Include="App_Data\MediaFiles\B\F\9\{BF93488D-DB7E-4B52-8CB4-48604DE9C357}Sitecore-initializing.png" />
     <Content Include="default.css" />
+    <Content Include="App_Data\MediaFiles\3\0\3\{303F296F-E1B1-4650-A2B9-C05A4D7755C9}Alen Pelin.jpg" />
     <Content Include="Views\Bloggr\Layout.cshtml">
       <SubType>Code</SubType>
     </Content>
@@ -92,11 +102,9 @@
     <Content Include="Views\Bloggr\Components\Post.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\Sitecore.JsonDataProvider.config" />
     <Content Include="packages.config" />
-    <None Include="Properties\PublishProfiles\czxczx.pubxml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Content Include="App_Data\master.json" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

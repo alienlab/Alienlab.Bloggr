@@ -23,10 +23,10 @@
       var item = items.SingleOrDefault();
       Assert.IsNotNull(item, "item");
 
-      var bloggrPostTemplate = item.GetItem("/sitecore/templates/Bloggr/Global/BloggrPost");
       var home = BloggrContext.GetHome(item);
       var structure = home != null ? BloggrContext.GetPostsStructureItem(home) : null;
-      if (structure == null || structure.Get("BloggrPostAutoName") != "1")
+      var bloggrPostTemplate = item.GetItem("/sitecore/templates/Bloggr/Global/Bloggr Post");
+      if (structure == null || structure.Get("Bloggr Post AutoName") != "1")
       {
         context.Parameters.Add("master", bloggrPostTemplate.ID.ToString());
 
@@ -35,7 +35,7 @@
       }
 
       var template = (TemplateItem)bloggrPostTemplate;
-      Context.Workflow.AddItem("BloggrPost", template, item);
+      Context.Workflow.AddItem("Bloggr Post", template, item);
     }
 
     /// <summary>

@@ -17,7 +17,7 @@
       var item = Event.ExtractParameter(args, 0) as Item;
       Assert.IsNotNull(item, "item");
 
-      if (item.TemplateName != "BloggrPost")
+      if (item.TemplateName != "Bloggr Post")
       {
         return;
       }
@@ -47,7 +47,7 @@
       var item = Event.ExtractParameter(args, 0) as Item;
       Assert.IsNotNull(item, "item");
 
-      if (item.TemplateName != "BloggrPost")
+      if (item.TemplateName != "Bloggr Post")
       {
         return;
       }
@@ -72,7 +72,7 @@
       var item = Event.ExtractParameter(args, 0) as Item;
       Assert.IsNotNull(item, "item");
 
-      if (item.TemplateName != "BloggrPost")
+      if (item.TemplateName != "Bloggr Post")
       {
         return;
       }
@@ -99,7 +99,7 @@
       var item = Event.ExtractParameter(args, 0) as Item;
       Assert.IsNotNull(item, "item");
 
-      if (item.TemplateName != "BloggrPost")
+      if (item.TemplateName != "Bloggr Post")
       {
         return;
       }

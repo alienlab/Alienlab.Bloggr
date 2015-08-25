@@ -15,12 +15,12 @@
       @if (Sitecore.Context.PageMode.IsPageEditor)
       {
         <span><strong>// Post description:</strong> (it is shown in the search or in news page only)</span><br />
-        @Html.Sitecore().Field("BloggrDescription", item)
+        @Html.Sitecore().Field("Bloggr Description", item)
         <br />
         <p><strong>// Post text:</strong> (it is on blog post page only)</p>
       }
       
-      @Html.Sitecore().Field("BloggrText", item)
+      @Html.Sitecore().Field("Bloggr Text", item)
 
     </div>
   }

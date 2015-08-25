@@ -3,3 +3,4 @@ src/Alienlab.Bloggr/obj/
 src/packages/
 src/Alienlab.Bloggr.Tests/bin/
 src/Alienlab.Bloggr/bin/
+*.pubxml

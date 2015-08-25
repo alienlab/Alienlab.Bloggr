@@ -8,8 +8,8 @@
 
   public static class BloggrContext
   {
-    public const string BloggrStructure = "BloggrMode";
-    public const string BloggrStructureType = "BloggrModeType";
+    public const string BloggrStructure = "Bloggr Mode";
+    public const string BloggrStructureType = "Bloggr Mode Type";
 
     [CanBeNull]
     public static Item GetHome()
@@ -43,7 +43,7 @@
       Assert.ArgumentNotNull(item, "item");
       
       var bloggrHome = GetHome(item);
-      Assert.IsNotNull(bloggrHome, "Cannot find BloggrHome item for {0}", item.Paths.FullPath);
+      Assert.IsNotNull(bloggrHome, "Cannot find Bloggr Home item for {0}", item.Paths.FullPath);
 
       return bloggrHome;
     }

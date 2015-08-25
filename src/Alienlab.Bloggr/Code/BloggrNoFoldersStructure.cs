@@ -33,7 +33,7 @@
       var parent = bloggrPost.Parent;
       Assert.IsNotNull(parent, "parent");
 
-      return parent.TemplateName == "BloggrHome";
+      return parent.TemplateName == "Bloggr Home";
     }
 
     public void FixPostLocation(Item bloggrPost)
