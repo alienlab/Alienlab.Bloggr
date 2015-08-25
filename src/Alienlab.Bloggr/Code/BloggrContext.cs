@@ -2,6 +2,8 @@
 {
   using System;
   using System.Collections.Generic;
+  using System.Linq;
+
   using Sitecore;
   using Sitecore.Data.Items;
   using Sitecore.Diagnostics;
@@ -28,7 +30,7 @@
     {
       Assert.ArgumentNotNull(item, "item");
 
-      return item.Axes.SelectSingleItem("ancestor-or-self::*[@@templatekey='bloggrhome']");
+      return item.Axes.SelectSingleItem("ancestor-or-self::*[@@templatekey='bloggr home']");
     }
 
     [NotNull]
@@ -60,8 +62,7 @@
     {
       Assert.ArgumentNotNull(bloggrHome, "bloggrHome");
 
-      return bloggrHome.Axes
-        .SelectItems("descendant::*[@templatekey='bloggrPost']") ?? new Item[0];
+      return bloggrHome.Axes.GetDescendants().Where(x => x.TemplateName == "Bloggr Post").ToArray();
     }
 
     [NotNull]
