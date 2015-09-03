@@ -1,13 +1,10 @@
 ﻿namespace Alienlab.Bloggr 
 {
-  using System;
-  using System.Collections.Specialized;
   using System.Linq;
   using Sitecore;
   using Sitecore.Data.Items;
   using Sitecore.Diagnostics;
   using Sitecore.Shell.Framework.Commands;
-  using Sitecore.Text;
   using Sitecore.Web.UI.Sheer;
 
   [UsedImplicitly]
@@ -25,7 +22,7 @@
 
       var home = BloggrContext.GetHome(item);
       var structure = home != null ? BloggrContext.GetPostsStructureItem(home) : null;
-      var bloggrPostTemplate = item.GetItem("/sitecore/templates/Bloggr/Global/Bloggr Post");
+      var bloggrPostTemplate = item.GetItem("{2BDE036E-3503-4BF0-B978-213F46541B21}");
       if (structure == null || structure.Get("Bloggr Post AutoName") != "1")
       {
         context.Parameters.Add("master", bloggrPostTemplate.ID.ToString());

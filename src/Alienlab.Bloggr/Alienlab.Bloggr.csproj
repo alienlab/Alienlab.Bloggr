@@ -45,9 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Sitecore.JsonDataProvider, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Sitecore.JsonDataProvider, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Sitecore.JsonDataProvider.1.0.3\lib\Sitecore.JsonDataProvider.dll</HintPath>
+      <HintPath>..\packages\Sitecore.JsonDataProvider.1.0.5\lib\Sitecore.JsonDataProvider.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\..\..\..\wwwroot\bloggr\Website\bin\Sitecore.Kernel.dll</HintPath>
@@ -66,7 +66,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\BloggrBlogEventHandler.cs" />
     <Compile Include="Code\BloggrContext.cs" />
+    <Compile Include="Code\BloggrFactory.cs" />
     <Compile Include="Code\BloggrNoFoldersStructure.cs" />
     <Compile Include="Code\BloggrCreatedDateFolderStructure.cs" />
     <Compile Include="Code\BloggrPostEventHandler.cs" />
@@ -102,9 +104,16 @@
     <Content Include="Views\Bloggr\Components\Post.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Sitecore.JsonDataProvider.config" />
-    <Content Include="packages.config" />
+    <Content Include="App_Config\Include\Sitecore.JsonDataProvider.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Data\master.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\zzz.Bloggr.JsonDataProvider.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

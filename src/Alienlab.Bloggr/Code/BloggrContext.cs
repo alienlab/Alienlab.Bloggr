@@ -10,8 +10,8 @@
 
   public static class BloggrContext
   {
-    public const string BloggrStructure = "Bloggr Mode";
-    public const string BloggrStructureType = "Bloggr Mode Type";
+    public const string BloggrStructure = "Bloggr Structure";
+    public const string BloggrStructureType = "Bloggr Structure Type";
 
     [CanBeNull]
     public static Item GetHome()

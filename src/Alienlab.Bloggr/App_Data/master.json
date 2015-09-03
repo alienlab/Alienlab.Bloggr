@@ -5,647 +5,563 @@
       "Name": "Bloggr",
       "TemplateID": "0437fee2-44c9-46a6-abe9-28858d9fee8c",
       "Fields": {
-        "Shared": {},
+        "Shared": {
+				},
+        "Unversioned": {
+				},
         "Versioned": {
-          "en": {
-            "1": {}
-          }
-        }
+				}
       },
       "Children": [
         {
-          "ID": "c9ae59b8-9f96-447f-8ba6-40255fc4e6f0",
-          "Name": "Global",
-          "TemplateID": "0437fee2-44c9-46a6-abe9-28858d9fee8c",
+          "ID": "15fa2775-5bfa-43c5-91e7-a3581448d0b2",
+          "Name": "Bloggr Create Blog Branch",
+          "TemplateID": "35e75c72-4985-4e09-88c3-0eac6cd1e64f",
           "Fields": {
-            "Shared": {},
+            "Shared": {
+              "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "150",
+            },
+            "Unversioned": {
+						},
             "Versioned": {
               "en": {
-                "1": {}
-              }
+                "1": {
+                  "{52807595-0F8F-4B20-8D2A-CB71D28C6103}": "sitecore\\admin",
+                },
+              },
             }
           },
           "Children": [
             {
-              "ID": "15fa2775-5bfa-43c5-91e7-a3581448d0b2",
-              "Name": "Bloggr Create Blog Branch",
-              "TemplateID": "35e75c72-4985-4e09-88c3-0eac6cd1e64f",
+              "ID": "683f661c-1863-4312-bc2b-71fae310981f",
+              "Name": "$name",
+              "TemplateID": "c32e276e-38fd-43ea-8e02-3129d94b4cd6",
               "Fields": {
                 "Shared": {
-                  "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "150"
+                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "RESET THIS SASDASDSDA",
+                  "{9C6106EA-7A5A-48E2-8CAD-F0F693B1E2D4}": "1",
                 },
+                "Unversioned": {
+								},
                 "Versioned": {
-                  "en": {
-                    "1": {}
-                  }
-                }
+								}
               },
               "Children": [
                 {
-                  "ID": "683f661c-1863-4312-bc2b-71fae310981f",
-                  "Name": "$name",
-                  "TemplateID": "239f9cf4-e5a0-44e0-b342-0f32cd4c6d8b",
+                  "ID": "4480fc94-cd78-40e1-9260-fa3737e1c516",
+                  "Name": "Home",
+                  "TemplateID": "e212e51a-2d80-4238-92e7-978ec0f83795",
                   "Fields": {
                     "Shared": {
-                      "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/32x32/notebook2.png"
-                    },
+										},
+                    "Unversioned": {
+										},
                     "Versioned": {
-                      "en": {
-                        "1": {}
-                      }
-                    }
+										}
                   },
                   "Children": [
-                    {
-                      "ID": "4480fc94-cd78-40e1-9260-fa3737e1c516",
-                      "Name": "Home",
-                      "TemplateID": "e212e51a-2d80-4238-92e7-978ec0f83795",
-                      "Fields": {
-                        "Shared": {},
-                        "Versioned": {
-                          "en": {
-                            "1": {}
-                          }
-                        }
-                      },
-                      "Children": []
-                    }
-                  ]
-                }
+									]
+                },
               ]
             },
-            {
-              "ID": "eb2e7bc1-46f7-4545-b44d-d3317d323139",
-              "Name": "Bloggr Author",
-              "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
-              "Fields": {
-                "Shared": {
-                  "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1267B64F-28E6-48BE-A2CD-0072B7441377}",
-                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Applications/16x16/photo_portrait.png"
-                },
-                "Versioned": {
-                  "en": {
-                    "1": {}
-                  }
-                }
-              },
-              "Children": []
+          ]
+        },
+        {
+          "ID": "eb2e7bc1-46f7-4545-b44d-d3317d323139",
+          "Name": "Bloggr Author",
+          "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
+          "Fields": {
+            "Shared": {
+              "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1267B64F-28E6-48BE-A2CD-0072B7441377}",
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Applications/16x16/photo_portrait.png",
             },
-            {
-              "ID": "54016d19-b0b0-4320-81fe-0cf6a15e3586",
-              "Name": "Bloggr Create Post Command",
-              "TemplateID": "b2613cc1-a748-46a3-a0db-3774574bd339",
-              "Fields": {
-                "Shared": {
-                  "{854CC8F6-94AD-4521-A4B6-44ED8F794C98}": "bloggr:createpost"
-                },
-                "Versioned": {
-                  "en": {
-                    "1": {}
-                  }
-                }
-              },
-              "Children": []
+            "Unversioned": {
+						},
+            "Versioned": {
+						}
+          },
+          "Children": [
+					]
+        },
+        {
+          "ID": "54016d19-b0b0-4320-81fe-0cf6a15e3586",
+          "Name": "Bloggr Create Post Command",
+          "TemplateID": "b2613cc1-a748-46a3-a0db-3774574bd339",
+          "Fields": {
+            "Shared": {
+              "{854CC8F6-94AD-4521-A4B6-44ED8F794C98}": "bloggr:createpost",
             },
-            {
-              "ID": "6ad51dc2-b4ed-4e7f-90f2-05f77bd382e4",
-              "Name": "Bloggr Feed",
-              "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
-              "Fields": {
-                "Shared": {
-                  "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1267B64F-28E6-48BE-A2CD-0072B7441377}",
-                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Business/16x16/index.png"
+            "Unversioned": {
+						},
+            "Versioned": {
+              "en": {
+                "1": {
+                  "{52807595-0F8F-4B20-8D2A-CB71D28C6103}": "sitecore\\admin",
                 },
-                "Versioned": {
-                  "en": {
-                    "1": {}
-                  }
-                }
               },
-              "Children": []
+            }
+          },
+          "Children": [
+					]
+        },
+        {
+          "ID": "6ad51dc2-b4ed-4e7f-90f2-05f77bd382e4",
+          "Name": "Bloggr Feed",
+          "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
+          "Fields": {
+            "Shared": {
+              "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1267B64F-28E6-48BE-A2CD-0072B7441377}",
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Business/16x16/index.png",
             },
+            "Unversioned": {
+						},
+            "Versioned": {
+						}
+          },
+          "Children": [
+					]
+        },
+        {
+          "ID": "e212e51a-2d80-4238-92e7-978ec0f83795",
+          "Name": "Bloggr Home",
+          "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
+          "Fields": {
+            "Shared": {
+              "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1267B64F-28E6-48BE-A2CD-0072B7441377}",
+              "{F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}": "<r xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\" l=\"{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}\"><r ds=\"\" id=\"{E1AF4AA3-3B5D-4611-8C71-959AD261E5B7}\" par=\"FieldName=Bloggr Text\" ph=\"bloggr-content\" uid=\"{97497A58-0CFA-44E1-886D-954E54A34588}\" /><r id=\"{73A7BD18-1385-4C05-8DD5-1AA6028EA68C}\" ph=\"bloggr-content\" uid=\"{7414F048-6E95-4A48-B644-F44660BE4240}\" /></d></r>",
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "network/16x16/home.png",
+              "{F7D48A55-2158-4F02-9356-756654404F73}": "{809F6B0B-9F43-4897-A9EB-88BD5585A390}",
+            },
+            "Unversioned": {
+						},
+            "Versioned": {
+						}
+          },
+          "Children": [
             {
-              "ID": "e212e51a-2d80-4238-92e7-978ec0f83795",
-              "Name": "Bloggr Home",
-              "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
+              "ID": "ed8fc0f8-8822-4a4b-a469-35461868cd39",
+              "Name": "Bloggr",
+              "TemplateID": "e269fbb5-3750-427a-9149-7aa950b49301",
               "Fields": {
                 "Shared": {
-                  "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1267B64F-28E6-48BE-A2CD-0072B7441377}",
-                  "{F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}": "<r xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\" l=\"{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}\"><r ds=\"\" id=\"{E1AF4AA3-3B5D-4611-8C71-959AD261E5B7}\" par=\"FieldName=Bloggr Text\" ph=\"bloggr-content\" uid=\"{97497A58-0CFA-44E1-886D-954E54A34588}\" /><r id=\"{73A7BD18-1385-4C05-8DD5-1AA6028EA68C}\" ph=\"bloggr-content\" uid=\"{7414F048-6E95-4A48-B644-F44660BE4240}\" /></d></r>",
-                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "network/16x16/home.png",
-                  "{F7D48A55-2158-4F02-9356-756654404F73}": "{809F6B0B-9F43-4897-A9EB-88BD5585A390}"
-                },
+								},
+                "Unversioned": {
+								},
                 "Versioned": {
                   "en": {
-                    "1": {}
-                  }
+                    "1": {
+                      "{4C346442-E859-4EFD-89B2-44AEDF467D21}": "",
+                      "{C8F93AFE-BFD4-4E8F-9C61-152559854661}": "",
+                    },
+                  },
                 }
               },
               "Children": [
                 {
-                  "ID": "ed8fc0f8-8822-4a4b-a469-35461868cd39",
-                  "Name": "Bloggr",
-                  "TemplateID": "e269fbb5-3750-427a-9149-7aa950b49301",
+                  "ID": "43ccd02b-0a2e-4aca-91a7-577379d21b24",
+                  "Name": "Bloggr Footer",
+                  "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
                   "Fields": {
-                    "Shared": {},
+                    "Shared": {
+                      "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Single-Line Text",
+                      "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "200",
+                    },
+                    "Unversioned": {
+										},
                     "Versioned": {
                       "en": {
                         "1": {
                           "{4C346442-E859-4EFD-89B2-44AEDF467D21}": "",
-                          "{C8F93AFE-BFD4-4E8F-9C61-152559854661}": ""
-                        }
-                      }
+                          "{C8F93AFE-BFD4-4E8F-9C61-152559854661}": "",
+                        },
+                      },
                     }
                   },
                   "Children": [
-                    {
-                      "ID": "43ccd02b-0a2e-4aca-91a7-577379d21b24",
-                      "Name": "Bloggr Footer",
-                      "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
-                      "Fields": {
-                        "Shared": {
-                          "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Single-Line Text",
-                          "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "200"
-                        },
-                        "Versioned": {
-                          "en": {
-                            "1": {
-                              "{4C346442-E859-4EFD-89B2-44AEDF467D21}": "",
-                              "{C8F93AFE-BFD4-4E8F-9C61-152559854661}": ""
-                            }
-                          }
-                        }
-                      },
-                      "Children": []
-                    },
-                    {
-                      "ID": "2ac019b3-99c6-4b5f-b2d6-8325197aa0f4",
-                      "Name": "Bloggr Structure",
-                      "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
-                      "Fields": {
-                        "Shared": {
-                          "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Droplink",
-                          "{1EB8AE32-E190-44A6-968D-ED904C794EBF}": "/sitecore/system/Modules/Bloggr/Structures",
-                          "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "300",
-                          "{BE351A73-FCB0-4213-93FA-C302D8AB4F51}": "1"
-                        },
-                        "Versioned": {
-                          "en": {
-                            "1": {}
-                          }
-                        }
-                      },
-                      "Children": []
-                    },
-                    {
-                      "ID": "f7226d35-a339-438a-800c-8d484ed272be",
-                      "Name": "Bloggr Title",
-                      "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
-                      "Fields": {
-                        "Shared": {
-                          "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Single-Line Text",
-                          "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "100"
-                        },
-                        "Versioned": {
-                          "en": {
-                            "1": {}
-                          }
-                        }
-                      },
-                      "Children": []
-                    }
-                  ]
+									]
                 },
                 {
-                  "ID": "809f6b0b-9f43-4897-a9eb-88bd5585a390",
-                  "Name": "__Standard Values",
-                  "TemplateID": "e212e51a-2d80-4238-92e7-978ec0f83795",
+                  "ID": "2ac019b3-99c6-4b5f-b2d6-8325197aa0f4",
+                  "Name": "Bloggr Structure",
+                  "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
                   "Fields": {
                     "Shared": {
-                      "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "{54016D19-B0B0-4320-81FE-0CF6A15E3586}|{1267B64F-28E6-48BE-A2CD-0072B7441377}|{EB2E7BC1-46F7-4545-B44D-D3317D323139}",
-                      "{2AC019B3-99C6-4B5F-B2D6-8325197AA0F4}": "Bloggr Flat Structure",
-                      "{F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}": "<r xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\" l=\"{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}\"><r ds=\"\" id=\"{E1AF4AA3-3B5D-4611-8C71-959AD261E5B7}\" par=\"FieldName=Bloggr Text\" ph=\"bloggr-content\" uid=\"{8DA7DAF6-7CA1-4435-8DB4-3A04CE54CA24}\" /><r id=\"{73A7BD18-1385-4C05-8DD5-1AA6028EA68C}\" ph=\"bloggr-content\" uid=\"{0665489C-F2E8-4B78-B1BB-3B0CEF62CDBC}\" /></d></r>"
+                      "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Droplink",
+                      "{1EB8AE32-E190-44A6-968D-ED904C794EBF}": "/sitecore/system/Modules/Bloggr/Structures",
+                      "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "300",
+                      "{BE351A73-FCB0-4213-93FA-C302D8AB4F51}": "1",
                     },
+                    "Unversioned": {
+										},
                     "Versioned": {
-                      "en": {
-                        "1": {
-                          "{04BF00DB-F5FB-41F7-8AB7-22408372A981}": "<r xmlns:p=\"p\" xmlns:s=\"s\" p:p=\"1\"><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\"><r uid=\"{0665489C-F2E8-4B78-B1BB-3B0CEF62CDBC}\" s:id=\"{73A7BD18-1385-4C05-8DD5-1AA6028EA68C}\" s:ph=\"bloggr-content\" /></d></r>"
-                        }
-                      }
-                    }
+										}
                   },
-                  "Children": []
-                }
+                  "Children": [
+									]
+                },
+                {
+                  "ID": "f7226d35-a339-438a-800c-8d484ed272be",
+                  "Name": "Bloggr Title",
+                  "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
+                  "Fields": {
+                    "Shared": {
+                      "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Single-Line Text",
+                      "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "100",
+                    },
+                    "Unversioned": {
+										},
+                    "Versioned": {
+										}
+                  },
+                  "Children": [
+									]
+                },
               ]
             },
             {
-              "ID": "1267b64f-28e6-48be-a2cd-0072b7441377",
-              "Name": "Bloggr Page",
-              "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
+              "ID": "809f6b0b-9f43-4897-a9eb-88bd5585a390",
+              "Name": "__Standard Values",
+              "TemplateID": "e212e51a-2d80-4238-92e7-978ec0f83795",
               "Fields": {
                 "Shared": {
-                  "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1930BBEB-7805-471A-A3BE-4858AC7CF696}",
-                  "{F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}": "<r xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\" l=\"{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}\"><r cac=\"1\" ds=\"\" id=\"{E1AF4AA3-3B5D-4611-8C71-959AD261E5B7}\" par=\"FieldName=Bloggr Text\" ph=\"bloggr-content\" uid=\"{D3650095-724F-4BB4-9ECA-5159FA825AF4}\" vbd=\"1\" /><r id=\"{73A7BD18-1385-4C05-8DD5-1AA6028EA68C}\" ph=\"bloggr-content\" uid=\"{C91E54FE-B9B0-4B3E-B97D-0FCE6B487C2E}\" /></d></r>",
-                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Applications/16x16/document_plain.png",
-                  "{F7D48A55-2158-4F02-9356-756654404F73}": "{0A65EE88-4F73-43B7-8416-F729F1A9B173}"
+                  "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "{54016D19-B0B0-4320-81FE-0CF6A15E3586}|{1267B64F-28E6-48BE-A2CD-0072B7441377}|{EB2E7BC1-46F7-4545-B44D-D3317D323139}",
+                  "{2AC019B3-99C6-4B5F-B2D6-8325197AA0F4}": "Bloggr Flat Structure",
+                  "{F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}": "<r xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\" l=\"{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}\"><r ds=\"\" id=\"{E1AF4AA3-3B5D-4611-8C71-959AD261E5B7}\" par=\"FieldName=Bloggr Text\" ph=\"bloggr-content\" uid=\"{8DA7DAF6-7CA1-4435-8DB4-3A04CE54CA24}\" /><r id=\"{73A7BD18-1385-4C05-8DD5-1AA6028EA68C}\" ph=\"bloggr-content\" uid=\"{0665489C-F2E8-4B78-B1BB-3B0CEF62CDBC}\" /></d></r>",
                 },
+                "Unversioned": {
+								},
                 "Versioned": {
                   "en": {
                     "1": {
-                      "{04BF00DB-F5FB-41F7-8AB7-22408372A981}": "<r xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\" l=\"{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}\"><r cac=\"1\" ds=\"\" id=\"{E1AF4AA3-3B5D-4611-8C71-959AD261E5B7}\" par=\"FieldName=Bloggr Text\" ph=\"bloggr-content\" uid=\"{D3650095-724F-4BB4-9ECA-5159FA825AF4}\" vbd=\"1\" /><r id=\"{73A7BD18-1385-4C05-8DD5-1AA6028EA68C}\" ph=\"bloggr-content\" uid=\"{C91E54FE-B9B0-4B3E-B97D-0FCE6B487C2E}\" /></d></r>"
-                    }
-                  }
+                      "{04BF00DB-F5FB-41F7-8AB7-22408372A981}": "<r xmlns:p=\"p\" xmlns:s=\"s\" p:p=\"1\"><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\"><r uid=\"{0665489C-F2E8-4B78-B1BB-3B0CEF62CDBC}\" s:id=\"{73A7BD18-1385-4C05-8DD5-1AA6028EA68C}\" s:ph=\"bloggr-content\" /></d></r>",
+                    },
+                  },
                 }
               },
               "Children": [
-                {
-                  "ID": "304f91f3-242a-49e7-a998-22eb4f8c62cd",
-                  "Name": "Bloggr",
-                  "TemplateID": "e269fbb5-3750-427a-9149-7aa950b49301",
-                  "Fields": {
-                    "Shared": {},
-                    "Versioned": {
-                      "en": {
-                        "1": {}
-                      }
-                    }
-                  },
-                  "Children": [
-                    {
-                      "ID": "246fcd64-2896-49f5-93c8-383460561eac",
-                      "Name": "Bloggr Text",
-                      "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
-                      "Fields": {
-                        "Shared": {
-                          "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Rich Text",
-                          "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "100"
-                        },
-                        "Versioned": {
-                          "en": {
-                            "1": {}
-                          }
-                        }
-                      },
-                      "Children": []
-                    }
-                  ]
-                },
-                {
-                  "ID": "0a65ee88-4f73-43b7-8416-f729f1a9b173",
-                  "Name": "__Standard Values",
-                  "TemplateID": "1267b64f-28e6-48be-a2cd-0072b7441377",
-                  "Fields": {
-                    "Shared": {
-                      "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "{EB2E7BC1-46F7-4545-B44D-D3317D323139}|{1267B64F-28E6-48BE-A2CD-0072B7441377}|{E03F5A52-BD90-4D35-BFD9-5486B22DF5E6}|{2BDE036E-3503-4BF0-B978-213F46541B21}",
-                      "{F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}": "<r xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\" l=\"{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}\"><r ds=\"\" id=\"{E1AF4AA3-3B5D-4611-8C71-959AD261E5B7}\" par=\"Field=Bloggr Text\" ph=\"bloggr-content\" uid=\"{8DA7DAF6-7CA1-4435-8DB4-3A04CE54CA24}\" /></d></r>",
-                      "{CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}": "{3CCFF50C-8317-43F4-82F7-5E919D3E4A76}"
-                    },
-                    "Versioned": {
-                      "en": {
-                        "1": {
-                          "{04BF00DB-F5FB-41F7-8AB7-22408372A981}": "<r xmlns:p=\"p\" xmlns:s=\"s\" p:p=\"1\"><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\"><r uid=\"{8DA7DAF6-7CA1-4435-8DB4-3A04CE54CA24}\" s:ds=\"\" s:id=\"{E1AF4AA3-3B5D-4611-8C71-959AD261E5B7}\" s:par=\"FieldName=Bloggr Text\" s:ph=\"bloggr-content\" /></d></r>"
-                        }
-                      }
-                    }
-                  },
-                  "Children": []
-                }
-              ]
+							]
             },
-            {
-              "ID": "2bde036e-3503-4bf0-b978-213f46541b21",
-              "Name": "Bloggr Post",
-              "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
-              "Fields": {
-                "Shared": {
-                  "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1267B64F-28E6-48BE-A2CD-0072B7441377}",
-                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Business/16x16/note.png",
-                  "{F7D48A55-2158-4F02-9356-756654404F73}": "{B696753C-1B28-4DF3-BBD9-3EA7E6349AC6}"
-                },
-                "Versioned": {
-                  "en": {
-                    "1": {}
-                  }
-                }
-              },
-              "Children": [
-                {
-                  "ID": "7542bc22-9ef9-461e-b179-56fd73b8f617",
-                  "Name": "Bloggr",
-                  "TemplateID": "e269fbb5-3750-427a-9149-7aa950b49301",
-                  "Fields": {
-                    "Shared": {},
-                    "Versioned": {
-                      "en": {
-                        "1": {}
-                      }
-                    }
-                  },
-                  "Children": [
-                    {
-                      "ID": "0501a774-e5f8-4921-9797-e9c5f8d6b127",
-                      "Name": "Bloggr Author",
-                      "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
-                      "Fields": {
-                        "Shared": {
-                          "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Droptree",
-                          "{1EB8AE32-E190-44A6-968D-ED904C794EBF}": "/sitecore/content",
-                          "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "100",
-                          "{BE351A73-FCB0-4213-93FA-C302D8AB4F51}": "1"
-                        },
-                        "Versioned": {
-                          "en": {
-                            "1": {}
-                          }
-                        }
-                      },
-                      "Children": []
-                    },
-                    {
-                      "ID": "5b6de480-45d4-4c35-9faf-25721fe2ff57",
-                      "Name": "Bloggr Description",
-                      "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
-                      "Fields": {
-                        "Shared": {
-                          "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Rich Text",
-                          "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "200"
-                        },
-                        "Versioned": {
-                          "en": {
-                            "1": {}
-                          }
-                        }
-                      },
-                      "Children": []
-                    }
-                  ]
-                },
-                {
-                  "ID": "b696753c-1b28-4df3-bbd9-3ea7e6349ac6",
-                  "Name": "__Standard Values",
-                  "TemplateID": "2bde036e-3503-4bf0-b978-213f46541b21",
-                  "Fields": {
-                    "Shared": {
-                      "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "{54016D19-B0B0-4320-81FE-0CF6A15E3586}",
-                      "{F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}": "<r xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\" l=\"{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}\"><r id=\"{3B95BA1F-2764-466E-BADB-96F18B7E1E9B}\" ph=\"bloggr-content\" uid=\"{F5963F80-5936-4E7F-8D67-F26A440C8B3F}\" /></d></r>"
-                    },
-                    "Versioned": {
-                      "en": {
-                        "1": {}
-                      }
-                    }
-                  },
-                  "Children": []
-                }
-              ]
-            },
-            {
-              "ID": "e03f5a52-bd90-4d35-bfd9-5486b22df5e6",
-              "Name": "Bloggr Post Folder",
-              "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
-              "Fields": {
-                "Shared": {
-                  "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1267B64F-28E6-48BE-A2CD-0072B7441377}",
-                  "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "0",
-                  "{9C6106EA-7A5A-48E2-8CAD-F0F693B1E2D4}": "",
-                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Applications/16x16/folder.png",
-                  "{F7D48A55-2158-4F02-9356-756654404F73}": "{204AEDB3-8603-4EBE-B1F7-85C16281D204}"
-                },
-                "Unversioned": {
-                  "en": {
-                    "{B5E02AD9-D56F-4C41-A065-A133DB87BDEB}": ""
-                  }
-                },
-                "Versioned": {
-                  "en": {
-                    "1": {}
-                  }
-                }
-              },
-              "Children": [
-                {
-                  "ID": "204aedb3-8603-4ebe-b1f7-85c16281d204",
-                  "Name": "__Standard Values",
-                  "TemplateID": "e03f5a52-bd90-4d35-bfd9-5486b22df5e6",
-                  "Fields": {
-                    "Shared": {
-                      "{A0CB3965-8884-4C7A-8815-B6B2E5CED162}": "{A0C460F4-DBAE-4A5A-8F3A-C4ADFCDACEEA}",
-                      "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "{54016D19-B0B0-4320-81FE-0CF6A15E3586}"
-                    },
-                    "Versioned": {
-                      "en": {
-                        "1": {
-                          "{52807595-0F8F-4B20-8D2A-CB71D28C6103}": "sitecore\\admin"
-                        }
-                      }
-                    }
-                  },
-                  "Children": []
-                }
-              ]
-            },
-            {
-              "ID": "c32e276e-38fd-43ea-8e02-3129d94b4cd6",
-              "Name": "Bloggr Root",
-              "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
-              "Fields": {
-                "Shared": {
-                  "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1930BBEB-7805-471A-A3BE-4858AC7CF696}",
-                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Network/16x16/server.png",
-                  "{F7D48A55-2158-4F02-9356-756654404F73}": "{B8ABECDF-3DBC-4FE1-A93F-B410227A299F}"
-                },
-                "Versioned": {
-                  "en": {
-                    "1": {}
-                  }
-                }
-              },
-              "Children": [
-                {
-                  "ID": "b8abecdf-3dbc-4fe1-a93f-b410227a299f",
-                  "Name": "__Standard Values",
-                  "TemplateID": "c32e276e-38fd-43ea-8e02-3129d94b4cd6",
-                  "Fields": {
-                    "Shared": {
-                      "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "{E212E51A-2D80-4238-92E7-978EC0F83795}"
-                    },
-                    "Versioned": {
-                      "en": {
-                        "1": {}
-                      }
-                    }
-                  },
-                  "Children": []
-                }
-              ]
-            },
-            {
-              "ID": "abfb2912-15a5-4544-a9b3-c629b150680e",
-              "Name": "Bloggr Structure",
-              "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
-              "Fields": {
-                "Shared": {
-                  "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
-                },
-                "Versioned": {
-                  "en": {
-                    "1": {}
-                  }
-                }
-              },
-              "Children": [
-                {
-                  "ID": "6b467142-f6c8-487a-b894-35d690dc4e0a",
-                  "Name": "Bloggr",
-                  "TemplateID": "e269fbb5-3750-427a-9149-7aa950b49301",
-                  "Fields": {
-                    "Shared": {},
-                    "Versioned": {
-                      "en": {
-                        "1": {}
-                      }
-                    }
-                  },
-                  "Children": [
-                    {
-                      "ID": "0d2eff28-ab9a-40e4-8cc7-b4aea0768f9d",
-                      "Name": "Bloggr Post AutoName",
-                      "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
-                      "Fields": {
-                        "Shared": {
-                          "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Checkbox",
-                          "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "200",
-                          "{BE351A73-FCB0-4213-93FA-C302D8AB4F51}": "1"
-                        },
-                        "Versioned": {
-                          "en": {
-                            "1": {}
-                          }
-                        }
-                      },
-                      "Children": []
-                    },
-                    {
-                      "ID": "4626edd8-aa96-4145-8342-32e96030a530",
-                      "Name": "Bloggr Structure Type",
-                      "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
-                      "Fields": {
-                        "Shared": {
-                          "{BE351A73-FCB0-4213-93FA-C302D8AB4F51}": "1",
-                          "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Single-Line Text",
-                          "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "100"
-                        },
-                        "Versioned": {
-                          "en": {
-                            "1": {}
-                          }
-                        }
-                      },
-                      "Children": []
-                    }
-                  ]
-                }
-              ]
-            }
           ]
         },
         {
-          "ID": "331ff784-3422-4225-9681-2fc2b2721454",
-          "Name": "Structures",
-          "TemplateID": "0437fee2-44c9-46a6-abe9-28858d9fee8c",
+          "ID": "1267b64f-28e6-48be-a2cd-0072b7441377",
+          "Name": "Bloggr Page",
+          "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
           "Fields": {
-            "Shared": {},
+            "Shared": {
+              "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1930BBEB-7805-471A-A3BE-4858AC7CF696}",
+              "{F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}": "<r xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\" l=\"{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}\"><r cac=\"1\" ds=\"\" id=\"{E1AF4AA3-3B5D-4611-8C71-959AD261E5B7}\" par=\"FieldName=Bloggr Text\" ph=\"bloggr-content\" uid=\"{D3650095-724F-4BB4-9ECA-5159FA825AF4}\" vbd=\"1\" /><r id=\"{73A7BD18-1385-4C05-8DD5-1AA6028EA68C}\" ph=\"bloggr-content\" uid=\"{C91E54FE-B9B0-4B3E-B97D-0FCE6B487C2E}\" /></d></r>",
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Applications/16x16/document_plain.png",
+              "{F7D48A55-2158-4F02-9356-756654404F73}": "{0A65EE88-4F73-43B7-8416-F729F1A9B173}",
+            },
+            "Unversioned": {
+						},
             "Versioned": {
               "en": {
-                "1": {}
-              }
+                "1": {
+                  "{04BF00DB-F5FB-41F7-8AB7-22408372A981}": "<r xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\" l=\"{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}\"><r cac=\"1\" ds=\"\" id=\"{E1AF4AA3-3B5D-4611-8C71-959AD261E5B7}\" par=\"FieldName=Bloggr Text\" ph=\"bloggr-content\" uid=\"{D3650095-724F-4BB4-9ECA-5159FA825AF4}\" vbd=\"1\" /><r id=\"{73A7BD18-1385-4C05-8DD5-1AA6028EA68C}\" ph=\"bloggr-content\" uid=\"{C91E54FE-B9B0-4B3E-B97D-0FCE6B487C2E}\" /></d></r>",
+                },
+              },
             }
           },
           "Children": [
             {
-              "ID": "4ae7401e-ea0c-4ab0-98f5-d0143b8de6f5",
-              "Name": "Created Date Folder",
-              "TemplateID": "0437fee2-44c9-46a6-abe9-28858d9fee8c",
+              "ID": "304f91f3-242a-49e7-a998-22eb4f8c62cd",
+              "Name": "Bloggr",
+              "TemplateID": "e269fbb5-3750-427a-9149-7aa950b49301",
               "Fields": {
-                "Shared": {},
+                "Shared": {
+								},
+                "Unversioned": {
+								},
                 "Versioned": {
-                  "en": {
-                    "1": {}
-                  }
-                }
+								}
               },
               "Children": [
                 {
-                  "ID": "fcd07af3-fc65-467f-b88b-6c1420bea961",
-                  "Name": "Bloggr Created Date Folder Structure",
-                  "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
+                  "ID": "246fcd64-2896-49f5-93c8-383460561eac",
+                  "Name": "Bloggr Text",
+                  "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
                   "Fields": {
                     "Shared": {
-                      "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{ABFB2912-15A5-4544-A9B3-C629B150680E}"
+                      "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Rich Text",
+                      "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "100",
                     },
+                    "Unversioned": {
+										},
                     "Versioned": {
-                      "en": {
-                        "1": {}
-                      }
-                    }
+										}
                   },
                   "Children": [
-                    {
-                      "ID": "86a453b9-9c12-4d76-baf4-5c99659cd240",
-                      "Name": "Bloggr",
-                      "TemplateID": "e269fbb5-3750-427a-9149-7aa950b49301",
-                      "Fields": {
-                        "Shared": {},
-                        "Versioned": {
-                          "en": {
-                            "1": {}
-                          }
-                        }
-                      },
-                      "Children": [
-                        {
-                          "ID": "e48168c9-5d7d-4d22-88dc-75800249d6d5",
-                          "Name": "Bloggr Folder Template",
-                          "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
-                          "Fields": {
-                            "Shared": {
-                              "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Droptree",
-                              "{1EB8AE32-E190-44A6-968D-ED904C794EBF}": "/sitecore/templates/Bloggr",
-                              "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "100",
-                              "{BE351A73-FCB0-4213-93FA-C302D8AB4F51}": "1"
-                            },
-                            "Versioned": {
-                              "en": {
-                                "1": {}
-                              }
-                            }
-                          },
-                          "Children": []
-                        }
-                      ]
-                    }
-                  ]
-                }
+									]
+                },
               ]
             },
             {
-              "ID": "aaa8e331-d613-465d-90a3-7c97ce699212",
-              "Name": "Flat",
-              "TemplateID": "0437fee2-44c9-46a6-abe9-28858d9fee8c",
+              "ID": "0a65ee88-4f73-43b7-8416-f729f1a9b173",
+              "Name": "__Standard Values",
+              "TemplateID": "1267b64f-28e6-48be-a2cd-0072b7441377",
               "Fields": {
-                "Shared": {},
+                "Shared": {
+                  "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "{EB2E7BC1-46F7-4545-B44D-D3317D323139}|{1267B64F-28E6-48BE-A2CD-0072B7441377}|{E03F5A52-BD90-4D35-BFD9-5486B22DF5E6}|{2BDE036E-3503-4BF0-B978-213F46541B21}",
+                  "{F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}": "<r xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\" l=\"{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}\"><r ds=\"\" id=\"{E1AF4AA3-3B5D-4611-8C71-959AD261E5B7}\" par=\"Field=Bloggr Text\" ph=\"bloggr-content\" uid=\"{8DA7DAF6-7CA1-4435-8DB4-3A04CE54CA24}\" /></d></r>",
+                  "{CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}": "{3CCFF50C-8317-43F4-82F7-5E919D3E4A76}",
+                },
+                "Unversioned": {
+								},
                 "Versioned": {
                   "en": {
-                    "1": {}
-                  }
+                    "1": {
+                      "{04BF00DB-F5FB-41F7-8AB7-22408372A981}": "<r xmlns:p=\"p\" xmlns:s=\"s\" p:p=\"1\"><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\"><r uid=\"{8DA7DAF6-7CA1-4435-8DB4-3A04CE54CA24}\" s:ds=\"\" s:id=\"{E1AF4AA3-3B5D-4611-8C71-959AD261E5B7}\" s:par=\"FieldName=Bloggr Text\" s:ph=\"bloggr-content\" /></d></r>",
+                    },
+                  },
                 }
               },
-              "Children": []
-            }
+              "Children": [
+							]
+            },
           ]
-        }
+        },
+        {
+          "ID": "2bde036e-3503-4bf0-b978-213f46541b21",
+          "Name": "Bloggr Post",
+          "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
+          "Fields": {
+            "Shared": {
+              "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1267B64F-28E6-48BE-A2CD-0072B7441377}",
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Business/16x16/note.png",
+              "{F7D48A55-2158-4F02-9356-756654404F73}": "{B696753C-1B28-4DF3-BBD9-3EA7E6349AC6}",
+            },
+            "Unversioned": {
+						},
+            "Versioned": {
+						}
+          },
+          "Children": [
+            {
+              "ID": "7542bc22-9ef9-461e-b179-56fd73b8f617",
+              "Name": "Bloggr",
+              "TemplateID": "e269fbb5-3750-427a-9149-7aa950b49301",
+              "Fields": {
+                "Shared": {
+								},
+                "Unversioned": {
+								},
+                "Versioned": {
+								}
+              },
+              "Children": [
+                {
+                  "ID": "0501a774-e5f8-4921-9797-e9c5f8d6b127",
+                  "Name": "Bloggr Author",
+                  "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
+                  "Fields": {
+                    "Shared": {
+                      "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Droptree",
+                      "{1EB8AE32-E190-44A6-968D-ED904C794EBF}": "/sitecore/content",
+                      "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "100",
+                      "{BE351A73-FCB0-4213-93FA-C302D8AB4F51}": "1",
+                    },
+                    "Unversioned": {
+										},
+                    "Versioned": {
+										}
+                  },
+                  "Children": [
+									]
+                },
+                {
+                  "ID": "5b6de480-45d4-4c35-9faf-25721fe2ff57",
+                  "Name": "Bloggr Description",
+                  "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
+                  "Fields": {
+                    "Shared": {
+                      "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Rich Text",
+                      "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "200",
+                    },
+                    "Unversioned": {
+										},
+                    "Versioned": {
+										}
+                  },
+                  "Children": [
+									]
+                },
+              ]
+            },
+            {
+              "ID": "b696753c-1b28-4df3-bbd9-3ea7e6349ac6",
+              "Name": "__Standard Values",
+              "TemplateID": "2bde036e-3503-4bf0-b978-213f46541b21",
+              "Fields": {
+                "Shared": {
+                  "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "",
+                  "{F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}": "<r xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\" l=\"{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}\"><r id=\"{3B95BA1F-2764-466E-BADB-96F18B7E1E9B}\" ph=\"bloggr-content\" uid=\"{F5963F80-5936-4E7F-8D67-F26A440C8B3F}\" /></d></r>",
+                },
+                "Unversioned": {
+								},
+                "Versioned": {
+								}
+              },
+              "Children": [
+							]
+            },
+          ]
+        },
+        {
+          "ID": "e03f5a52-bd90-4d35-bfd9-5486b22df5e6",
+          "Name": "Bloggr Post Folder",
+          "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
+          "Fields": {
+            "Shared": {
+              "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1267B64F-28E6-48BE-A2CD-0072B7441377}",
+              "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "0",
+              "{9C6106EA-7A5A-48E2-8CAD-F0F693B1E2D4}": "",
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Applications/16x16/folder.png",
+              "{F7D48A55-2158-4F02-9356-756654404F73}": "{204AEDB3-8603-4EBE-B1F7-85C16281D204}",
+            },
+            "Unversioned": {
+              "en": {
+                "{B5E02AD9-D56F-4C41-A065-A133DB87BDEB}": "",
+              },
+            },
+            "Versioned": {
+						}
+          },
+          "Children": [
+            {
+              "ID": "204aedb3-8603-4ebe-b1f7-85c16281d204",
+              "Name": "__Standard Values",
+              "TemplateID": "e03f5a52-bd90-4d35-bfd9-5486b22df5e6",
+              "Fields": {
+                "Shared": {
+                  "{A0CB3965-8884-4C7A-8815-B6B2E5CED162}": "{A0C460F4-DBAE-4A5A-8F3A-C4ADFCDACEEA}",
+                  "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "{54016D19-B0B0-4320-81FE-0CF6A15E3586}",
+                },
+                "Unversioned": {
+								},
+                "Versioned": {
+                  "en": {
+                    "1": {
+                      "{52807595-0F8F-4B20-8D2A-CB71D28C6103}": "sitecore\\admin",
+                    },
+                  },
+                }
+              },
+              "Children": [
+							]
+            },
+          ]
+        },
+        {
+          "ID": "c32e276e-38fd-43ea-8e02-3129d94b4cd6",
+          "Name": "Bloggr Root",
+          "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
+          "Fields": {
+            "Shared": {
+              "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1930BBEB-7805-471A-A3BE-4858AC7CF696}",
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Office/32x32/notebook2.png",
+              "{F7D48A55-2158-4F02-9356-756654404F73}": "{33472F3C-04A7-46E0-80DF-92EE4778F0AC}",
+            },
+            "Unversioned": {
+						},
+            "Versioned": {
+						}
+          },
+          "Children": [
+            {
+              "ID": "33472f3c-04a7-46e0-80df-92ee4778f0ac",
+              "Name": "__Standard Values",
+              "TemplateID": "c32e276e-38fd-43ea-8e02-3129d94b4cd6",
+              "Fields": {
+                "Shared": {
+                  "{A0CB3965-8884-4C7A-8815-B6B2E5CED162}": "{A0C460F4-DBAE-4A5A-8F3A-C4ADFCDACEEA}",
+                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Bloggr Authors - Alen|pe|+item:write|ar|sitecore\\Bloggr Reviewers - Alen|pd|+item:write|",
+                },
+                "Unversioned": {
+								},
+                "Versioned": {
+                  "en": {
+                    "1": {
+                      "{52807595-0F8F-4B20-8D2A-CB71D28C6103}": "sitecore\\admin",
+                    },
+                  },
+                }
+              },
+              "Children": [
+							]
+            },
+          ]
+        },
+        {
+          "ID": "abfb2912-15a5-4544-a9b3-c629b150680e",
+          "Name": "Bloggr Structure",
+          "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
+          "Fields": {
+            "Shared": {
+              "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1930BBEB-7805-471A-A3BE-4858AC7CF696}",
+            },
+            "Unversioned": {
+						},
+            "Versioned": {
+						}
+          },
+          "Children": [
+            {
+              "ID": "6b467142-f6c8-487a-b894-35d690dc4e0a",
+              "Name": "Bloggr",
+              "TemplateID": "e269fbb5-3750-427a-9149-7aa950b49301",
+              "Fields": {
+                "Shared": {
+								},
+                "Unversioned": {
+								},
+                "Versioned": {
+								}
+              },
+              "Children": [
+                {
+                  "ID": "0d2eff28-ab9a-40e4-8cc7-b4aea0768f9d",
+                  "Name": "Bloggr Post AutoName",
+                  "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
+                  "Fields": {
+                    "Shared": {
+                      "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Checkbox",
+                      "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "200",
+                      "{BE351A73-FCB0-4213-93FA-C302D8AB4F51}": "1",
+                    },
+                    "Unversioned": {
+										},
+                    "Versioned": {
+										}
+                  },
+                  "Children": [
+									]
+                },
+                {
+                  "ID": "4626edd8-aa96-4145-8342-32e96030a530",
+                  "Name": "Bloggr Structure Type",
+                  "TemplateID": "455a3e98-a627-4b40-8035-e683a0331ac7",
+                  "Fields": {
+                    "Shared": {
+                      "{BE351A73-FCB0-4213-93FA-C302D8AB4F51}": "1",
+                      "{AB162CC0-DC80-4ABF-8871-998EE5D7BA32}": "Single-Line Text",
+                      "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "100",
+                    },
+                    "Unversioned": {
+										},
+                    "Versioned": {
+										}
+                  },
+                  "Children": [
+									]
+                },
+              ]
+            },
+          ]
+        },
       ]
-    }
+    },
   ],
   "{0DE95AE4-41AB-4D01-9EB0-67441B7C2450}": [
     {
@@ -654,28 +570,30 @@
       "TemplateID": "239f9cf4-e5a0-44e0-b342-0f32cd4c6d8b",
       "Fields": {
         "Shared": {
-          "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "{C32E276E-38FD-43EA-8E02-3129D94B4CD6}"
+          "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "{15FA2775-5BFA-43C5-91E7-A3581448D0B2}",
+          "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Bloggr Global Administrators|pe|+item:create|pd|+item:rename|+item:create|+item:admin|+item:delete|+item:write|",
+          "{9C6106EA-7A5A-48E2-8CAD-F0F693B1E2D4}": "1",
         },
+        "Unversioned": {
+				},
         "Versioned": {
-          "en": {
-            "1": {}
-          }
-        }
+				}
       },
       "Children": [
         {
           "ID": "380e9d18-6e46-4a3b-ba8f-df459560d934",
           "Name": "Alen",
-          "TemplateID": "239f9cf4-e5a0-44e0-b342-0f32cd4c6d8b",
+          "TemplateID": "c32e276e-38fd-43ea-8e02-3129d94b4cd6",
           "Fields": {
             "Shared": {
-              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Office/32x32/notebook2.png"
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Office/32x32/notebook2.png",
+              "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Bloggr Administrators - Alen|pd|+item:rename|+item:create|+item:delete|+item:admin|ar|sitecore\\Bloggr Reviewers - Alen|pd|+item:write|ar|sitecore\\Bloggr Authors - Alen|pd|+item:rename|+item:write|+item:create|",
+              "{9C6106EA-7A5A-48E2-8CAD-F0F693B1E2D4}": "1",
             },
+            "Unversioned": {
+						},
             "Versioned": {
-              "en": {
-                "1": {}
-              }
-            }
+						}
           },
           "Children": [
             {
@@ -684,19 +602,21 @@
               "TemplateID": "e212e51a-2d80-4238-92e7-978ec0f83795",
               "Fields": {
                 "Shared": {
-                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|Creator-Owner|pe|+item:write|pd|+item:write|ar|sitecore\\Bloggr Author|pe|+item:create|pd|+item:create|ar|sitecore\\Bloggr Reviewer|pe|+item:rename|+item:write|+item:delete|+item:admin|pd|+item:rename|+item:write|+item:delete|+item:admin|",
+                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|Creator-Owner|pe|+item:write|+item:delete|pd|+item:write|+item:delete|ar|sitecore\\Bloggr Reviewer|pe|+item:rename|+item:write|pd|+item:rename|+item:write|ar|sitecore\\Bloggr Author|pe|+item:create|pd|+item:create|",
                   "{A4F985D9-98B3-4B52-AAAF-4344F6E747C6}": "{3CCFF50C-8317-43F4-82F7-5E919D3E4A76}",
-                  "{2AC019B3-99C6-4B5F-B2D6-8325197AA0F4}": "{3A64B190-F8CC-4FCC-96C0-D02206C958C7}"
+                  "{2AC019B3-99C6-4B5F-B2D6-8325197AA0F4}": "{3A64B190-F8CC-4FCC-96C0-D02206C958C7}",
                 },
+                "Unversioned": {
+								},
                 "Versioned": {
                   "en": {
                     "1": {
-                      "{3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}": "{060F7446-546F-444B-85BE-42C6C8416AF0}",
+                      "{3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}": "{34230A0F-5EA7-4D3C-A6B3-E868CDC3F3C3}",
                       "{246FCD64-2896-49F5-93C8-383460561EAC}": "<p>My thoughts and notes about .NET development in general and in context of Sitecore.</p>",
-                      "{F7226D35-A339-438A-800C-8D484ED272BE}": "Bloggr",
-                      "{43CCD02B-0A2E-4ACA-91A7-577379D21B24}": "Copyright (c) Bloggr"
-                    }
-                  }
+                      "{F7226D35-A339-438A-800C-8D484ED272BE}": "Development and Sitecore by Alen Pelin",
+                      "{43CCD02B-0A2E-4ACA-91A7-577379D21B24}": "Copyright (c) Alen Pelin",
+                    },
+                  },
                 }
               },
               "Children": [
@@ -705,12 +625,12 @@
                   "Name": "2015",
                   "TemplateID": "e03f5a52-bd90-4d35-bfd9-5486b22df5e6",
                   "Fields": {
-                    "Shared": {},
+                    "Shared": {
+										},
+                    "Unversioned": {
+										},
                     "Versioned": {
-                      "en": {
-                        "1": {}
-                      }
-                    }
+										}
                   },
                   "Children": [
                     {
@@ -718,12 +638,12 @@
                       "Name": "06",
                       "TemplateID": "e03f5a52-bd90-4d35-bfd9-5486b22df5e6",
                       "Fields": {
-                        "Shared": {},
+                        "Shared": {
+												},
+                        "Unversioned": {
+												},
                         "Versioned": {
-                          "en": {
-                            "1": {}
-                          }
-                        }
+												}
                       },
                       "Children": [
                         {
@@ -731,12 +651,12 @@
                           "Name": "25",
                           "TemplateID": "e03f5a52-bd90-4d35-bfd9-5486b22df5e6",
                           "Fields": {
-                            "Shared": {},
+                            "Shared": {
+														},
+                            "Unversioned": {
+														},
                             "Versioned": {
-                              "en": {
-                                "1": {}
-                              }
-                            }
+														}
                           },
                           "Children": [
                             {
@@ -747,29 +667,31 @@
                                 "Shared": {
                                   "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "300",
                                   "{0501A774-E5F8-4921-9797-E9C5F8D6B127}": "{8C125124-0372-4607-A6F1-6E5B8F1EC0A3}",
-                                  "{A4F985D9-98B3-4B52-AAAF-4344F6E747C6}": "{3CCFF50C-8317-43F4-82F7-5E919D3E4A76}"
+                                  "{A4F985D9-98B3-4B52-AAAF-4344F6E747C6}": "{3CCFF50C-8317-43F4-82F7-5E919D3E4A76}",
                                 },
                                 "Unversioned": {
                                   "en": {
-                                    "{B5E02AD9-D56F-4C41-A065-A133DB87BDEB}": "Speed up development in Sitecore"
-                                  }
+                                    "{B5E02AD9-D56F-4C41-A065-A133DB87BDEB}": "Speed up development in Sitecore",
+                                  },
                                 },
                                 "Versioned": {
                                   "en": {
                                     "1": {
-                                      "{3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}": "{060F7446-546F-444B-85BE-42C6C8416AF0}",
+                                      "{3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}": "{34230A0F-5EA7-4D3C-A6B3-E868CDC3F3C3}",
                                       "{246FCD64-2896-49F5-93C8-383460561EAC}": "<p><img alt=\"\" src=\"~/media/6D14BF3B57C343B6B79ECEFE5931814A.ashx\" style=\"float: right;\">\nThere was always a problem that some of Sitecore developers experienced every day - waiting for Sitecore to re-initialize after deploying recent changes of their website during development. So typical lifecycle looked like this:</p>\n<ol>\n    <li>Modify a line in /Views/Home/Index.cshtml</li>\n    <li>Visual Studio -&gt; Deploy</li>\n    <li>Wait for deploy ends</li>\n    <li>Open http://mysite in browser</li>\n    <li>Wait for the page to load</li>\n</ol>\n<p>Depending on hardware, Sitecore version and solution configuration the last step can take from 5 seconds to 5 minutes.</p>\n<h3>SOLUTION #1: USE TWO SITECORE INSTANCES</h3>\n<p><img alt=\"\" src=\"~/media/0061968A7B0342DBB3AFF05A5CC70F6D.ashx\" style=\"float: left; margin-right: 20px;\"><img alt=\"\" src=\"~/media/7E3CF8D38FE443C7B2C4F682A3CA8D37.ashx\" style=\"float: right;\">The unpleasant waiting #5 that mostly terrifies Sitecore devs is usually caused by the fact that during code deployment or configuration changes the application pool is recycled and all in-memory data caches are invalidated and therefore need to be re-populated which takes time, especially in case of using large databases with large prefetch caches.&nbsp;</p>\n<p>This effect can be reduced if to tune up prefetch caches to minimum in dev environment - this is just an improvement, not the resolution.\n</p>\n<p>To resolve the issue completely for Content Editor application, I recommend using two Sitecore instances at a time:</p>\n<ul>\n    <li>mysite-cm - for dealing with items via Content Editor and Sitecore Rocks connection (\"CM\")\n    </li>\n    <li>mysite - for front-end and Page Editor/Experience Explorer (\"CD+CM\")\n    </li>\n</ul>\n<p>As you might already have guessed, the trick is to avoid application recycles completely in the area it is not needed at all - in item management interfaces. Sitecore Rocks uses web service to get the data, so it is related to it as well.</p>\n<img alt=\"\" src=\"~/media/06F1C47A184F458FBCF9954AEC61BE10.ashx\">\n<h4>Remark</h4>\n<p>Here is the simple instruction how to set up \"CM\" instance for your mysite Sitecore site:</p>\n<ol>\n    <li>Using SIM, install a Sitecore instance of the same version and same name plus \"-cm\" postfix\n    </li>\n    <li>Copy the ConnectionStrings.config file from the \"mysite\" to \"mysite-cm\" App_Config folder.\n    </li>\n</ol>\n<h3>SOLUTION #2: DO INDIVIDUAL FILE DEPLOYMENTS</h3>\n<p>As soon as we eliminated the waiting #5 for item editing facilities, we would still need to do something with this slowness for your mysite site as soon as you need to preview changes you did at step #1.</p>\n<p>Luckily, most often changes do not cause modification of assemblies as .cshtml files are compiled on the fly. So you can either to synchronize the file manually, or to use individual file deployment in Visual Studio: <a href=\"http://weblog.west-wind.com/posts/2013/May/10/Publish-Individual-Files-to-your-Server-in-Visual-Studio-20122\" target=\"_blank\" title=\"The link opens in new window\">http://weblog.west-wind.com/posts/2013/May/10/Publish-Individual-Files-to-your-Server-in-Visual-Studio-20122</a></p>\n<p>\nAs soon as it does not change binaries and configuration, the application recycle does not happen and page reloads blazingly fast.</p>",
-                                      "{5B6DE480-45D4-4C35-9FAF-25721FE2FF57}": "<p><img alt=\"Sitecore is being initialized\" src=\"~/media/BF93488DDB7E4B528CB448604DE9C357.ashx?h=179&w=386&hash=6A75C46E3559621C2CC895307B26F9139BAF3267\" style=\"height: 179px; width: 386px; float: right; margin-left: 20px;\">There was always a problem that some of Sitecore developers experienced every day -\nwaiting for Sitecore to re-initialize after deploying recent changes of their website during development.</p>\n<p>Depending on hardware, Sitecore version and solution configuration the last step can take from 5 seconds to 5 minutes.</p>"
-                                    }
-                                  }
+                                      "{5B6DE480-45D4-4C35-9FAF-25721FE2FF57}": "<p><img alt=\"Sitecore is being initialized\" src=\"~/media/BF93488DDB7E4B528CB448604DE9C357.ashx?h=179&w=386&hash=6A75C46E3559621C2CC895307B26F9139BAF3267\" style=\"height: 179px; width: 386px; float: right; margin-left: 20px;\">There was always a problem that some of Sitecore developers experienced every day -\nwaiting for Sitecore to re-initialize after deploying recent changes of their website during development.</p>\n<p>Depending on hardware, Sitecore version and solution configuration the last step can take from 5 seconds to 5 minutes.</p>",
+                                      "{52807595-0F8F-4B20-8D2A-CB71D28C6103}": "sitecore\\alen",
+                                    },
+                                  },
                                 }
                               },
-                              "Children": []
-                            }
+                              "Children": [
+															]
+                            },
                           ]
-                        }
+                        },
                       ]
-                    }
+                    },
                   ]
                 },
                 {
@@ -778,29 +700,70 @@
                   "TemplateID": "eb2e7bc1-46f7-4545-b44d-d3317d323139",
                   "Fields": {
                     "Shared": {
-                      "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "100"
+                      "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "100",
                     },
                     "Unversioned": {
                       "en": {
-                        "{B5E02AD9-D56F-4C41-A065-A133DB87BDEB}": "Alen Pelin"
-                      }
+                        "{B5E02AD9-D56F-4C41-A065-A133DB87BDEB}": "Alen Pelin",
+                      },
                     },
                     "Versioned": {
                       "en": {
                         "1": {
-                          "{246FCD64-2896-49F5-93C8-383460561EAC}": "<p><img alt=\"\" src=\"~/media/303F296FE1B14650A2B9C05A4D7755C9.ashx?h=427&w=427\" style=\"height: 427px; width: 427px; float: right; margin-left: 20px;\">I am an IT enthusiast and Sitecore engineer. My passion is creating power tools, writing elegant, performing, unit-test-covered and highly supportable code. In Sitecore I do special technical consulting for the most important customers to ensure the success of their Sitecore solutions.</p>"
-                        }
-                      }
+                          "{246FCD64-2896-49F5-93C8-383460561EAC}": "<p><img alt=\"\" src=\"~/media/303F296FE1B14650A2B9C05A4D7755C9.ashx?h=427&w=427\" style=\"height: 427px; width: 427px; float: right; margin-left: 20px;\">I am an IT enthusiast and Sitecore engineer. My passion is creating power tools, writing elegant, performing, unit-test-covered and highly supportable code. In Sitecore I do special technical consulting for the most important customers to ensure the success of their Sitecore solutions.</p>",
+                        },
+                      },
                     }
                   },
-                  "Children": []
-                }
+                  "Children": [
+									]
+                },
               ]
-            }
+            },
           ]
-        }
+        },
+        {
+          "ID": "318974e3-0bf6-4e94-896e-1037668cce76",
+          "Name": "Sveta",
+          "TemplateID": "c32e276e-38fd-43ea-8e02-3129d94b4cd6",
+          "Fields": {
+            "Shared": {
+              "{F6D8A61C-2F84-4401-BD24-52D2068172BC}": "{683F661C-1863-4312-BC2B-71FAE310981F}",
+              "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Bloggr Administrators - Sveta|pd|+item:rename|+item:create|+item:delete|+item:admin|ar|sitecore\\Bloggr Reviewers - Sveta|pd|+item:write|ar|sitecore\\Bloggr Authors - Sveta|pd|+item:rename|+item:write|+item:create|",
+            },
+            "Unversioned": {
+						},
+            "Versioned": {
+						}
+          },
+          "Children": [
+            {
+              "ID": "b64daedc-ea4b-4d66-8c3d-9b1184890973",
+              "Name": "Home",
+              "TemplateID": "e212e51a-2d80-4238-92e7-978ec0f83795",
+              "Fields": {
+                "Shared": {
+                  "{F6D8A61C-2F84-4401-BD24-52D2068172BC}": "{4480FC94-CD78-40E1-9260-FA3737E1C516}",
+                  "{A4F985D9-98B3-4B52-AAAF-4344F6E747C6}": "{3CCFF50C-8317-43F4-82F7-5E919D3E4A76}",
+                },
+                "Unversioned": {
+								},
+                "Versioned": {
+                  "en": {
+                    "1": {
+                      "{52807595-0F8F-4B20-8D2A-CB71D28C6103}": "sitecore\\bga",
+                      "{3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}": "{060F7446-546F-444B-85BE-42C6C8416AF0}",
+                    },
+                  },
+                }
+              },
+              "Children": [
+							]
+            },
+          ]
+        },
       ]
-    }
+    },
   ],
   "{75CC5CE4-8979-4008-9D3C-806477D57619}": [
     {
@@ -808,12 +771,12 @@
       "Name": "Bloggr",
       "TemplateID": "93227c5d-4fef-474d-94c0-f252ec8e8219",
       "Fields": {
-        "Shared": {},
+        "Shared": {
+				},
+        "Unversioned": {
+				},
         "Versioned": {
-          "en": {
-            "1": {}
-          }
-        }
+				}
       },
       "Children": [
         {
@@ -822,18 +785,18 @@
           "TemplateID": "3a45a723-64ee-4919-9d41-02fd40fd1466",
           "Fields": {
             "Shared": {
-              "{A036B2BC-BA04-44F6-A75F-BAE6CD242ABF}": "/Views/Bloggr/Layout.cshtml"
+              "{A036B2BC-BA04-44F6-A75F-BAE6CD242ABF}": "/Views/Bloggr/Layout.cshtml",
             },
+            "Unversioned": {
+						},
             "Versioned": {
-              "en": {
-                "1": {}
-              }
-            }
+						}
           },
-          "Children": []
-        }
+          "Children": [
+					]
+        },
       ]
-    }
+    },
   ],
   "{32566F0E-7686-45F1-A12F-D7260BD78BC3}": [
     {
@@ -841,12 +804,12 @@
       "Name": "Bloggr",
       "TemplateID": "7ee0975b-0698-493e-b3a2-0b2ef33d0522",
       "Fields": {
-        "Shared": {},
+        "Shared": {
+				},
+        "Unversioned": {
+				},
         "Versioned": {
-          "en": {
-            "1": {}
-          }
-        }
+				}
       },
       "Children": [
         {
@@ -855,15 +818,15 @@
           "TemplateID": "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6",
           "Fields": {
             "Shared": {
-              "{51B435BC-F7B9-478A-9C51-52916AF96FF5}": "/Views/Bloggr/Components/Feed.cshtml"
+              "{51B435BC-F7B9-478A-9C51-52916AF96FF5}": "/Views/Bloggr/Components/Feed.cshtml",
             },
+            "Unversioned": {
+						},
             "Versioned": {
-              "en": {
-                "1": {}
-              }
-            }
+						}
           },
-          "Children": []
+          "Children": [
+					]
         },
         {
           "ID": "1ba27fd4-286e-402d-b54d-077d31aa8ef1",
@@ -871,15 +834,15 @@
           "TemplateID": "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6",
           "Fields": {
             "Shared": {
-              "{51B435BC-F7B9-478A-9C51-52916AF96FF5}": "/Views/Bloggr/Components/Footer.cshtml"
+              "{51B435BC-F7B9-478A-9C51-52916AF96FF5}": "/Views/Bloggr/Components/Footer.cshtml",
             },
+            "Unversioned": {
+						},
             "Versioned": {
-              "en": {
-                "1": {}
-              }
-            }
+						}
           },
-          "Children": []
+          "Children": [
+					]
         },
         {
           "ID": "a576e2b1-d3a2-4376-a6b1-1960e6d11f34",
@@ -887,15 +850,15 @@
           "TemplateID": "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6",
           "Fields": {
             "Shared": {
-              "{51B435BC-F7B9-478A-9C51-52916AF96FF5}": "/Views/Bloggr/Components/Header.cshtml"
+              "{51B435BC-F7B9-478A-9C51-52916AF96FF5}": "/Views/Bloggr/Components/Header.cshtml",
             },
+            "Unversioned": {
+						},
             "Versioned": {
-              "en": {
-                "1": {}
-              }
-            }
+						}
           },
-          "Children": []
+          "Children": [
+					]
         },
         {
           "ID": "3b95ba1f-2764-466e-badb-96f18b7e1e9b",
@@ -903,18 +866,18 @@
           "TemplateID": "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6",
           "Fields": {
             "Shared": {
-              "{51B435BC-F7B9-478A-9C51-52916AF96FF5}": "/Views/Bloggr/Components/Post.cshtml"
+              "{51B435BC-F7B9-478A-9C51-52916AF96FF5}": "/Views/Bloggr/Components/Post.cshtml",
             },
+            "Unversioned": {
+						},
             "Versioned": {
-              "en": {
-                "1": {}
-              }
-            }
+						}
           },
-          "Children": []
-        }
+          "Children": [
+					]
+        },
       ]
-    }
+    },
   ],
   "{3D6658D8-A0BF-4E75-B3E2-D050FABCF4E1}": [
     {
@@ -922,12 +885,12 @@
       "Name": "Bloggr",
       "TemplateID": "fe5dd826-48c6-436d-b87a-7c4210c7413b",
       "Fields": {
-        "Shared": {},
+        "Shared": {
+				},
+        "Unversioned": {
+				},
         "Versioned": {
-          "en": {
-            "1": {}
-          }
-        }
+				}
       },
       "Children": [
         {
@@ -936,13 +899,12 @@
           "TemplateID": "fe5dd826-48c6-436d-b87a-7c4210c7413b",
           "Fields": {
             "Shared": {
-              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/32x32/magazine_folder.png"
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/32x32/magazine_folder.png",
             },
+            "Unversioned": {
+						},
             "Versioned": {
-              "en": {
-                "1": {}
-              }
-            }
+						}
           },
           "Children": [
             {
@@ -951,13 +913,12 @@
               "TemplateID": "fe5dd826-48c6-436d-b87a-7c4210c7413b",
               "Fields": {
                 "Shared": {
-                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/32x32/notebook2.png"
+                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/32x32/notebook2.png",
                 },
+                "Unversioned": {
+								},
                 "Versioned": {
-                  "en": {
-                    "1": {}
-                  }
-                }
+								}
               },
               "Children": [
                 {
@@ -965,12 +926,12 @@
                   "Name": "2015",
                   "TemplateID": "fe5dd826-48c6-436d-b87a-7c4210c7413b",
                   "Fields": {
-                    "Shared": {},
+                    "Shared": {
+										},
+                    "Unversioned": {
+										},
                     "Versioned": {
-                      "en": {
-                        "1": {}
-                      }
-                    }
+										}
                   },
                   "Children": [
                     {
@@ -978,12 +939,12 @@
                       "Name": "06",
                       "TemplateID": "fe5dd826-48c6-436d-b87a-7c4210c7413b",
                       "Fields": {
-                        "Shared": {},
+                        "Shared": {
+												},
+                        "Unversioned": {
+												},
                         "Versioned": {
-                          "en": {
-                            "1": {}
-                          }
-                        }
+												}
                       },
                       "Children": [
                         {
@@ -991,12 +952,12 @@
                           "Name": "25",
                           "TemplateID": "fe5dd826-48c6-436d-b87a-7c4210c7413b",
                           "Fields": {
-                            "Shared": {},
+                            "Shared": {
+														},
+                            "Unversioned": {
+														},
                             "Versioned": {
-                              "en": {
-                                "1": {}
-                              }
-                            }
+														}
                           },
                           "Children": [
                             {
@@ -1004,12 +965,12 @@
                               "Name": "01",
                               "TemplateID": "fe5dd826-48c6-436d-b87a-7c4210c7413b",
                               "Fields": {
-                                "Shared": {},
+                                "Shared": {
+																},
+                                "Unversioned": {
+																},
                                 "Versioned": {
-                                  "en": {
-                                    "1": {}
-                                  }
-                                }
+																}
                               },
                               "Children": [
                                 {
@@ -1025,15 +986,15 @@
                                       "{6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}": "image/gif",
                                       "{22EAC599-F13B-4607-A89D-C091763A467D}": "149",
                                       "{CB09946F-3218-4823-87D2-D5007C199A96}": "149 x 139",
-                                      "{DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}": "139"
+                                      "{DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}": "139",
                                     },
+                                    "Unversioned": {
+																		},
                                     "Versioned": {
-                                      "en": {
-                                        "1": {}
-                                      }
-                                    }
+																		}
                                   },
-                                  "Children": []
+                                  "Children": [
+																	]
                                 },
                                 {
                                   "ID": "7e3cf8d3-8fe4-43c7-b2c4-f682a3ca8d37",
@@ -1048,15 +1009,15 @@
                                       "{6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}": "image/png",
                                       "{22EAC599-F13B-4607-A89D-C091763A467D}": "209",
                                       "{CB09946F-3218-4823-87D2-D5007C199A96}": "209 x 161",
-                                      "{DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}": "161"
+                                      "{DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}": "161",
                                     },
+                                    "Unversioned": {
+																		},
                                     "Versioned": {
-                                      "en": {
-                                        "1": {}
-                                      }
-                                    }
+																		}
                                   },
-                                  "Children": []
+                                  "Children": [
+																	]
                                 },
                                 {
                                   "ID": "bf93488d-db7e-4b52-8cb4-48604de9c357",
@@ -1071,15 +1032,15 @@
                                       "{6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}": "image/png",
                                       "{22EAC599-F13B-4607-A89D-C091763A467D}": "438",
                                       "{CB09946F-3218-4823-87D2-D5007C199A96}": "438 x 222",
-                                      "{DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}": "222"
+                                      "{DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}": "222",
                                     },
+                                    "Unversioned": {
+																		},
                                     "Versioned": {
-                                      "en": {
-                                        "1": {}
-                                      }
-                                    }
+																		}
                                   },
-                                  "Children": []
+                                  "Children": [
+																	]
                                 },
                                 {
                                   "ID": "0061968a-7b03-42db-b3af-f05a5cc70f6d",
@@ -1094,15 +1055,15 @@
                                       "{6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}": "image/png",
                                       "{22EAC599-F13B-4607-A89D-C091763A467D}": "356",
                                       "{CB09946F-3218-4823-87D2-D5007C199A96}": "356 x 229",
-                                      "{DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}": "229"
+                                      "{DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}": "229",
                                     },
+                                    "Unversioned": {
+																		},
                                     "Versioned": {
-                                      "en": {
-                                        "1": {}
-                                      }
-                                    }
+																		}
                                   },
-                                  "Children": []
+                                  "Children": [
+																	]
                                 },
                                 {
                                   "ID": "06f1c47a-184f-458f-bcf9-954aec61be10",
@@ -1117,22 +1078,22 @@
                                       "{6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}": "image/png",
                                       "{22EAC599-F13B-4607-A89D-C091763A467D}": "1015",
                                       "{CB09946F-3218-4823-87D2-D5007C199A96}": "1015 x 366",
-                                      "{DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}": "366"
+                                      "{DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}": "366",
                                     },
+                                    "Unversioned": {
+																		},
                                     "Versioned": {
-                                      "en": {
-                                        "1": {}
-                                      }
-                                    }
+																		}
                                   },
-                                  "Children": []
-                                }
+                                  "Children": [
+																	]
+                                },
                               ]
-                            }
+                            },
                           ]
-                        }
+                        },
                       ]
-                    }
+                    },
                   ]
                 },
                 {
@@ -1148,20 +1109,23 @@
                       "{6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}": "image/jpeg",
                       "{22EAC599-F13B-4607-A89D-C091763A467D}": "427",
                       "{CB09946F-3218-4823-87D2-D5007C199A96}": "427 x 427",
-                      "{DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}": "427"
+                      "{DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}": "427",
                     },
+                    "Unversioned": {
+										},
                     "Versioned": {
                       "en": {
                         "1": {
-                          "{65885C44-8FCD-4A7F-94F1-EE63703FE193}": "Alen Pelin"
-                        }
-                      }
+                          "{65885C44-8FCD-4A7F-94F1-EE63703FE193}": "Alen Pelin",
+                        },
+                      },
                     }
                   },
-                  "Children": []
-                }
+                  "Children": [
+									]
+                },
               ]
-            }
+            },
           ]
         },
         {
@@ -1170,18 +1134,18 @@
           "TemplateID": "fe5dd826-48c6-436d-b87a-7c4210c7413b",
           "Fields": {
             "Shared": {
-              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Office/32x32/inbox_into.png"
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Office/32x32/inbox_into.png",
             },
+            "Unversioned": {
+						},
             "Versioned": {
-              "en": {
-                "1": {}
-              }
-            }
+						}
           },
-          "Children": []
-        }
+          "Children": [
+					]
+        },
       ]
-    }
+    },
   ],
   "{05592656-56D7-4D85-AACF-30919EE494F9}": [
     {
@@ -1191,29 +1155,31 @@
       "Fields": {
         "Shared": {
           "{B5166B38-E4BF-4410-953C-2037F2BF6A56}": "{060F7446-546F-444B-85BE-42C6C8416AF0}",
-          "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "{4B7E2DA9-DE43-4C83-88C3-02F042031D04}"
+          "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "{4B7E2DA9-DE43-4C83-88C3-02F042031D04}",
         },
+        "Unversioned": {
+				},
         "Versioned": {
-          "en": {
-            "1": {}
-          }
-        }
+				}
       },
       "Children": [
         {
           "ID": "42f6edf7-9a8c-4081-9926-6582b53d4ae6",
-          "Name": "Awaiting Approval",
+          "Name": "Under Review",
           "TemplateID": "4b7e2da9-de43-4c83-88c3-02f042031d04",
           "Fields": {
             "Shared": {
-              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "applications/16x16/document_ok.png",
-              "{FB8ABC73-7ACF-45A0-898C-D3CCB889C3EE}": ""
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/mail_write.png",
+              "{FB8ABC73-7ACF-45A0-898C-D3CCB889C3EE}": "",
+              "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Bloggr All Reviewers|pe|+workflowState:write|",
+            },
+            "Unversioned": {
+              "en": {
+                "{8C980A06-4059-4939-9C6F-A10F751CEB64}": "Finished state when author's work is done and reviewer attention needed.",
+              },
             },
             "Versioned": {
-              "en": {
-                "1": {}
-              }
-            }
+						}
           },
           "Children": [
             {
@@ -1222,18 +1188,19 @@
               "TemplateID": "cb01f9fc-c187-46b3-ab0b-97a8468d8303",
               "Fields": {
                 "Shared": {
-                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Sitecore Client Authoring|pd|+workflowCommand:execute|pe|+workflowCommand:execute|",
+                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Bloggr All Reviewers|pe|+workflowCommand:execute|",
                   "{DCBEBC58-6124-4100-A248-FC717D6C78D5}": "{34230A0F-5EA7-4D3C-A6B3-E868CDC3F3C3}",
-                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "/sitecore/shell/themes/standard/applications/16x16/check.png",
-                  "{82A7C02F-9A55-4BFE-B494-D1713D4BE9FF}": "1"
+                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/check.png",
+                  "{82A7C02F-9A55-4BFE-B494-D1713D4BE9FF}": "1",
+                  "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "100",
                 },
+                "Unversioned": {
+								},
                 "Versioned": {
-                  "en": {
-                    "1": {}
-                  }
-                }
+								}
               },
-              "Children": []
+              "Children": [
+							]
             },
             {
               "ID": "174371a6-6502-48d9-a48f-3472a57f803e",
@@ -1241,19 +1208,40 @@
               "TemplateID": "cb01f9fc-c187-46b3-ab0b-97a8468d8303",
               "Fields": {
                 "Shared": {
-                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Sitecore Client Authoring|pd|+workflowCommand:execute|pe|+workflowCommand:execute|",
+                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Bloggr All Reviewers|pe|+workflowCommand:execute|",
                   "{DCBEBC58-6124-4100-A248-FC717D6C78D5}": "{060F7446-546F-444B-85BE-42C6C8416AF0}",
-                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "/sitecore/shell/themes/standard/applications/16x16/delete.png",
-                  "{82A7C02F-9A55-4BFE-B494-D1713D4BE9FF}": ""
+                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/delete.png",
+                  "{82A7C02F-9A55-4BFE-B494-D1713D4BE9FF}": "",
+                  "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "300",
                 },
+                "Unversioned": {
+								},
                 "Versioned": {
-                  "en": {
-                    "1": {}
-                  }
-                }
+								}
               },
-              "Children": []
-            }
+              "Children": [
+							]
+            },
+            {
+              "ID": "14df22e6-622d-4db8-a475-af29951f3750",
+              "Name": "Publish Now",
+              "TemplateID": "cb01f9fc-c187-46b3-ab0b-97a8468d8303",
+              "Fields": {
+                "Shared": {
+                  "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "200",
+                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Bloggr All Reviewers|pe|+workflowCommand:execute|",
+                  "{DCBEBC58-6124-4100-A248-FC717D6C78D5}": "{34230A0F-5EA7-4D3C-A6B3-E868CDC3F3C3}",
+                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/earth2.png",
+                  "{82A7C02F-9A55-4BFE-B494-D1713D4BE9FF}": "1",
+                },
+                "Unversioned": {
+								},
+                "Versioned": {
+								}
+              },
+              "Children": [
+							]
+            },
           ]
         },
         {
@@ -1264,78 +1252,159 @@
             "Shared": {
               "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "10",
               "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "{CB01F9FC-C187-46B3-AB0B-97A8468D8303}",
-              "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Sitecore Client Authoring|pd|+workflowState:delete|+workflowState:write|pe|+workflowState:delete|+workflowState:write|",
-              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "/sitecore/shell/themes/standard/applications/16x16/document_edit.png",
-              "{FB8ABC73-7ACF-45A0-898C-D3CCB889C3EE}": ""
+              "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Bloggr All Users|pe|+workflowState:write|",
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/edit.png",
+              "{FB8ABC73-7ACF-45A0-898C-D3CCB889C3EE}": "",
+            },
+            "Unversioned": {
+              "en": {
+                "{8C980A06-4059-4939-9C6F-A10F751CEB64}": "Draft state when the page is being edited and does not need reviewer attention.",
+              },
             },
             "Versioned": {
-              "en": {
-                "1": {}
-              }
-            }
+						}
           },
           "Children": [
             {
               "ID": "059f6e95-2684-4800-bed3-3a6ea7b47008",
-              "Name": "For Review",
+              "Name": "Send to Review",
               "TemplateID": "cb01f9fc-c187-46b3-ab0b-97a8468d8303",
               "Fields": {
                 "Shared": {
-                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Sitecore Client Authoring|pd|+workflowCommand:execute|pe|+workflowCommand:execute|",
+                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Bloggr All Authors|pe|+workflowCommand:execute|",
                   "{DCBEBC58-6124-4100-A248-FC717D6C78D5}": "{42F6EDF7-9A8C-4081-9926-6582B53D4AE6}",
-                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "applications/16x16/nav_right_green.png",
-                  "{82A7C02F-9A55-4BFE-B494-D1713D4BE9FF}": "1"
+                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/submit.png",
+                  "{82A7C02F-9A55-4BFE-B494-D1713D4BE9FF}": "1",
                 },
+                "Unversioned": {
+								},
                 "Versioned": {
-                  "en": {
-                    "1": {}
-                  }
-                }
+								}
               },
-              "Children": []
+              "Children": [
+							]
             },
             {
               "ID": "eb70a505-e53e-4e88-883f-8c70f5c29236",
-              "Name": "Publish",
+              "Name": "Publish Now",
               "TemplateID": "cb01f9fc-c187-46b3-ab0b-97a8468d8303",
               "Fields": {
                 "Shared": {
                   "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "200",
-                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Sitecore Client Authoring|pd|+workflowCommand:execute|pe|+workflowCommand:execute|",
+                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Bloggr All Reviewers|pe|+workflowCommand:execute|",
                   "{DCBEBC58-6124-4100-A248-FC717D6C78D5}": "{34230A0F-5EA7-4D3C-A6B3-E868CDC3F3C3}",
-                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "/sitecore/shell/themes/standard/applications/16x16/check.png",
-                  "{82A7C02F-9A55-4BFE-B494-D1713D4BE9FF}": "1"
+                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/earth2.png",
+                  "{82A7C02F-9A55-4BFE-B494-D1713D4BE9FF}": "1",
                 },
+                "Unversioned": {
+								},
                 "Versioned": {
-                  "en": {
-                    "1": {}
-                  }
-                }
+								}
               },
-              "Children": []
-            }
+              "Children": [
+							]
+            },
           ]
         },
         {
           "ID": "34230a0f-5ea7-4d3c-a6b3-e868cdc3f3c3",
+          "Name": "Published",
+          "TemplateID": "4b7e2da9-de43-4c83-88c3-02f042031d04",
+          "Fields": {
+            "Shared": {
+              "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "200",
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/earth2.png",
+              "{FB8ABC73-7ACF-45A0-898C-D3CCB889C3EE}": "1",
+            },
+            "Unversioned": {
+						},
+            "Versioned": {
+						}
+          },
+          "Children": [
+					]
+        },
+        {
+          "ID": "afd13f79-1f45-4397-a3d8-9b42f846739e",
           "Name": "Approved",
           "TemplateID": "4b7e2da9-de43-4c83-88c3-02f042031d04",
           "Fields": {
             "Shared": {
               "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "200",
-              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Network/16x16/earth.png",
-              "{FB8ABC73-7ACF-45A0-898C-D3CCB889C3EE}": "1"
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/submit.png",
+              "{FB8ABC73-7ACF-45A0-898C-D3CCB889C3EE}": "",
+              "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Bloggr All Authors|pe|+workflowState:write|",
             },
+            "Unversioned": {
+						},
             "Versioned": {
-              "en": {
-                "1": {}
-              }
-            }
+						}
           },
-          "Children": []
-        }
+          "Children": [
+            {
+              "ID": "33db7a03-bc03-4b81-98a9-bb1deec28017",
+              "Name": "Publish Now",
+              "TemplateID": "cb01f9fc-c187-46b3-ab0b-97a8468d8303",
+              "Fields": {
+                "Shared": {
+                  "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "200",
+                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Bloggr All Authors|pe|+workflowCommand:execute|",
+                  "{DCBEBC58-6124-4100-A248-FC717D6C78D5}": "{34230A0F-5EA7-4D3C-A6B3-E868CDC3F3C3}",
+                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/earth2.png",
+                  "{82A7C02F-9A55-4BFE-B494-D1713D4BE9FF}": "1",
+                },
+                "Unversioned": {
+								},
+                "Versioned": {
+								}
+              },
+              "Children": [
+							]
+            },
+            {
+              "ID": "0997d986-3632-4c7d-a758-52f8ab59cf88",
+              "Name": "Return to Draft",
+              "TemplateID": "cb01f9fc-c187-46b3-ab0b-97a8468d8303",
+              "Fields": {
+                "Shared": {
+                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Bloggr All Authors|pe|+workflowCommand:execute|",
+                  "{DCBEBC58-6124-4100-A248-FC717D6C78D5}": "{060F7446-546F-444B-85BE-42C6C8416AF0}",
+                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/edit.png",
+                  "{82A7C02F-9A55-4BFE-B494-D1713D4BE9FF}": "1",
+                  "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "300",
+                },
+                "Unversioned": {
+								},
+                "Versioned": {
+								}
+              },
+              "Children": [
+							]
+            },
+            {
+              "ID": "471abb2e-2db3-44e7-8ea6-f6d2895a39c0",
+              "Name": "Schedule Publish",
+              "TemplateID": "cb01f9fc-c187-46b3-ab0b-97a8468d8303",
+              "Fields": {
+                "Shared": {
+                  "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "200",
+                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Bloggr All Authors|pe|+workflowCommand:execute|",
+                  "{DCBEBC58-6124-4100-A248-FC717D6C78D5}": "{34230A0F-5EA7-4D3C-A6B3-E868CDC3F3C3}",
+                  "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/calendar_clock.png",
+                  "{82A7C02F-9A55-4BFE-B494-D1713D4BE9FF}": "1",
+                },
+                "Unversioned": {
+								},
+                "Versioned": {
+								}
+              },
+              "Children": [
+							]
+            },
+          ]
+        },
       ]
-    }
+    },
   ],
   "{08477468-D438-43D4-9D6A-6D84A611971C}": [
     {
@@ -1343,12 +1412,12 @@
       "Name": "Bloggr",
       "TemplateID": "239f9cf4-e5a0-44e0-b342-0f32cd4c6d8b",
       "Fields": {
-        "Shared": {},
+        "Shared": {
+				},
+        "Unversioned": {
+				},
         "Versioned": {
-          "en": {
-            "1": {}
-          }
-        }
+				}
       },
       "Children": [
         {
@@ -1357,13 +1426,12 @@
           "TemplateID": "239f9cf4-e5a0-44e0-b342-0f32cd4c6d8b",
           "Fields": {
             "Shared": {
-              "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "{ABFB2912-15A5-4544-A9B3-C629B150680E}"
+              "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "{ABFB2912-15A5-4544-A9B3-C629B150680E}",
             },
+            "Unversioned": {
+						},
             "Versioned": {
-              "en": {
-                "1": {}
-              }
-            }
+						}
           },
           "Children": [
             {
@@ -1372,16 +1440,20 @@
               "TemplateID": "abfb2912-15a5-4544-a9b3-c629b150680e",
               "Fields": {
                 "Shared": {
-                  "{4626EDD8-AA96-4145-8342-32E96030A530}": "Alienlab.Bloggr.BloggrNoFoldersStructure, Alienlab.Bloggr"
+                  "{4626EDD8-AA96-4145-8342-32E96030A530}": "Alienlab.Bloggr.BloggrNoFoldersStructure, Alienlab.Bloggr",
                 },
+                "Unversioned": {
+								},
                 "Versioned": {
                   "en": {
                     "1": {
-                    }
-                  }
+                      "{52807595-0F8F-4B20-8D2A-CB71D28C6103}": "sitecore\\admin",
+                    },
+                  },
                 }
               },
-              "Children": []
+              "Children": [
+							]
             },
             {
               "ID": "3a64b190-f8cc-4fcc-96c0-d02206c958c7",
@@ -1390,20 +1462,52 @@
               "Fields": {
                 "Shared": {
                   "{4626EDD8-AA96-4145-8342-32E96030A530}": "Alienlab.Bloggr.BloggrCreatedDateFoldersStructure, Alienlab.Bloggr",
-                  "{0D2EFF28-AB9A-40E4-8CC7-B4AEA0768F9D}": "1"
+                  "{0D2EFF28-AB9A-40E4-8CC7-B4AEA0768F9D}": "1",
                 },
+                "Unversioned": {
+								},
                 "Versioned": {
                   "en": {
                     "1": {
-                    }
-                  }
+                      "{52807595-0F8F-4B20-8D2A-CB71D28C6103}": "sitecore\\admin",
+                    },
+                  },
                 }
               },
-              "Children": []
-            }
+              "Children": [
+							]
+            },
           ]
-        }
+        },
       ]
-    }
+    },
+  ],
+  "{64C4F646-A3FA-4205-B98E-4DE2C609B60F}": [
+    {
+      "ID": "41d84f39-f1f4-41e6-9e65-c6f24efe6787",
+      "Name": "ru",
+      "TemplateID": "f68f13a6-3395-426a-b9a1-fa2dc60d94eb",
+      "Fields": {
+        "Shared": {
+          "{0620F810-9294-4F14-AF9F-F5772EFCA0B2}": "",
+          "{C437E416-8948-427D-A982-8ED37AE3F553}": "ru",
+          "{8728D8FF-66D9-40C2-8B34-C4FC1466942E}": "utf-8",
+          "{990596CE-0024-43F3-BF4C-A991BFA69B45}": "65001",
+          "{49E5E8F3-ED4A-4A06-ABE1-B9408951DEE9}": "koi8-r",
+          "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "ar|sitecore\\Bloggr Users|pe|+language:read|+language:write|",
+        },
+        "Unversioned": {
+				},
+        "Versioned": {
+          "en": {
+            "1": {
+              "{52807595-0F8F-4B20-8D2A-CB71D28C6103}": "sitecore\\admin",
+            },
+          },
+        }
+      },
+      "Children": [
+			]
+    },
   ]
 }

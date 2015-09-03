@@ -11,29 +11,12 @@
   [UsedImplicitly]
   public class BloggrCreatedDateFoldersStructure : IBloggrStructure
   {
-    public virtual bool ValidatePostName(Item bloggrPost)
-    {
-      Assert.ArgumentNotNull(bloggrPost, "bloggrPost");
-      
-      var name = bloggrPost.Name;
-      Assert.IsNotNull(name, "name");
-
-      int num;
-      if (!int.TryParse(name, out num))
-      {
-        return false;
-      }
-
-      var children = bloggrPost.Parent.Children;
-      Assert.IsNotNull(children, "children");
-
-      return children.Count(x => x != null && x.Name == name) == 1;
-    }
+    private static readonly TemplateID BloggrPostFolder = new TemplateID(new ID("{E03F5A52-BD90-4D35-BFD9-5486B22DF5E6}"));
 
     public virtual void FixPostName(Item bloggrPost)
     {
       Assert.ArgumentNotNull(bloggrPost, "bloggrPost");
-      
+
       var children = bloggrPost.Parent.Children;
       Assert.IsNotNull(children, "children");
 
@@ -129,17 +112,15 @@
       var day = month.GetChild(createdDay) ?? this.CreateDateFolder(month, home, createdDay);
       bloggrPost.MoveTo(day);
     }
-    
+
     [NotNull]
     internal virtual Item CreateDateFolder([NotNull] Item parent, [NotNull] Item home, [NotNull] string folderName)
     {
       Assert.ArgumentNotNull(parent, "parent");
       Assert.ArgumentNotNull(home, "home");
       Assert.ArgumentNotNull(folderName, "folderName");
-      var bloggrStructure = BloggrContext.GetPostsStructureItem(home);
-      var templateField = bloggrStructure.GetSure("Bloggr Folder Template");
 
-      var dateFolder = parent.Add(folderName, new TemplateID(new ID(templateField)));
+      var dateFolder = parent.Add(folderName, BloggrPostFolder);
       Assert.IsNotNull(dateFolder, "dateFolder");
 
       return dateFolder;
@@ -150,7 +131,7 @@
       Assert.ArgumentNotNull(bloggrPost, "bloggrPost");
       Assert.ArgumentNotNull(newName, "newName");
 
-      using (new EditContext(bloggrPost, SecurityCheck.Disable))
+      using (new EditContext(bloggrPost, true, true))
       {
         bloggrPost.Name = newName;
       }

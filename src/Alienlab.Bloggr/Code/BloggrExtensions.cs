@@ -57,8 +57,8 @@
     public static Item GetItemSure([NotNull] this Item db, [NotNull] string itemPath)
     {
       Assert.ArgumentNotNull(db, "db");
-      Assert.ArgumentNotNullOrEmpty(itemPath, "itemPath");
-
+      Assert.ArgumentNotNull(itemPath, "itemPath");
+      
       var item = GetItem(db, itemPath);
       Assert.IsNotNull(item, "The {0} item does not exist or context user ({1}) does not have an access to it", itemPath, Context.User.GetDomainName());
 
