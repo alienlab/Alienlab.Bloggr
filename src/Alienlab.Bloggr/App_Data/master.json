@@ -6,23 +6,24 @@
       "TemplateID": "0437fee2-44c9-46a6-abe9-28858d9fee8c",
       "Fields": {
         "Shared": {
-				},
+        },
         "Unversioned": {
-				},
+        },
         "Versioned": {
-				}
+        }
       },
       "Children": [
         {
           "ID": "15fa2775-5bfa-43c5-91e7-a3581448d0b2",
-          "Name": "Bloggr Create Blog Branch",
+          "Name": "Blog Branch",
           "TemplateID": "35e75c72-4985-4e09-88c3-0eac6cd1e64f",
           "Fields": {
             "Shared": {
               "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "150",
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/plus.png",
             },
             "Unversioned": {
-						},
+            },
             "Versioned": {
               "en": {
                 "1": {
@@ -38,13 +39,13 @@
               "TemplateID": "c32e276e-38fd-43ea-8e02-3129d94b4cd6",
               "Fields": {
                 "Shared": {
-                  "{DEC8D2D5-E3CF-48B6-A653-8E69E2716641}": "RESET THIS SASDASDSDA",
                   "{9C6106EA-7A5A-48E2-8CAD-F0F693B1E2D4}": "1",
                 },
                 "Unversioned": {
-								},
+                },
                 "Versioned": {
-								}
+                  "{f7226d35-a339-438a-800c-8d484ed272be}": "$name",
+                }
               },
               "Children": [
                 {
@@ -68,7 +69,7 @@
         },
         {
           "ID": "eb2e7bc1-46f7-4545-b44d-d3317d323139",
-          "Name": "Bloggr Author",
+          "Name": "Author",
           "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
           "Fields": {
             "Shared": {
@@ -76,23 +77,28 @@
               "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Applications/16x16/photo_portrait.png",
             },
             "Unversioned": {
-						},
+            },
             "Versioned": {
-						}
+              "en": {
+                "1": {
+                },
+              },
+            }
           },
           "Children": [
-					]
+          ]
         },
         {
           "ID": "54016d19-b0b0-4320-81fe-0cf6a15e3586",
-          "Name": "Bloggr Create Post Command",
+          "Name": "Create Post",
           "TemplateID": "b2613cc1-a748-46a3-a0db-3774574bd339",
           "Fields": {
             "Shared": {
               "{854CC8F6-94AD-4521-A4B6-44ED8F794C98}": "bloggr:createpost",
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/plus.png",
             },
             "Unversioned": {
-						},
+            },
             "Versioned": {
               "en": {
                 "1": {
@@ -102,24 +108,7 @@
             }
           },
           "Children": [
-					]
-        },
-        {
-          "ID": "6ad51dc2-b4ed-4e7f-90f2-05f77bd382e4",
-          "Name": "Bloggr Feed",
-          "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
-          "Fields": {
-            "Shared": {
-              "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1267B64F-28E6-48BE-A2CD-0072B7441377}",
-              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Business/16x16/index.png",
-            },
-            "Unversioned": {
-						},
-            "Versioned": {
-						}
-          },
-          "Children": [
-					]
+          ]
         },
         {
           "ID": "e212e51a-2d80-4238-92e7-978ec0f83795",
@@ -129,13 +118,17 @@
             "Shared": {
               "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1267B64F-28E6-48BE-A2CD-0072B7441377}",
               "{F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}": "<r xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\" l=\"{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}\"><r ds=\"\" id=\"{E1AF4AA3-3B5D-4611-8C71-959AD261E5B7}\" par=\"FieldName=Bloggr Text\" ph=\"bloggr-content\" uid=\"{97497A58-0CFA-44E1-886D-954E54A34588}\" /><r id=\"{73A7BD18-1385-4C05-8DD5-1AA6028EA68C}\" ph=\"bloggr-content\" uid=\"{7414F048-6E95-4A48-B644-F44660BE4240}\" /></d></r>",
-              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "network/16x16/home.png",
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/home.png",
               "{F7D48A55-2158-4F02-9356-756654404F73}": "{809F6B0B-9F43-4897-A9EB-88BD5585A390}",
             },
             "Unversioned": {
-						},
+            },
             "Versioned": {
-						}
+              "en": {
+                "1": {
+                },
+              },
+            }
           },
           "Children": [
             {
@@ -192,12 +185,16 @@
                       "{BE351A73-FCB0-4213-93FA-C302D8AB4F51}": "1",
                     },
                     "Unversioned": {
-										},
+                    },
                     "Versioned": {
-										}
+                      "en": {
+                        "1": {
+                        },
+                      },
+                    }
                   },
                   "Children": [
-									]
+                  ]
                 },
                 {
                   "ID": "f7226d35-a339-438a-800c-8d484ed272be",
@@ -209,12 +206,16 @@
                       "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "100",
                     },
                     "Unversioned": {
-										},
+                    },
                     "Versioned": {
-										}
+                      "en": {
+                        "1": {
+                        },
+                      },
+                    }
                   },
                   "Children": [
-									]
+                  ]
                 },
               ]
             },
@@ -225,11 +226,11 @@
               "Fields": {
                 "Shared": {
                   "{1172F251-DAD4-4EFB-A329-0C63500E4F1E}": "{54016D19-B0B0-4320-81FE-0CF6A15E3586}|{1267B64F-28E6-48BE-A2CD-0072B7441377}|{EB2E7BC1-46F7-4545-B44D-D3317D323139}",
-                  "{2AC019B3-99C6-4B5F-B2D6-8325197AA0F4}": "Bloggr Flat Structure",
+                  "{2AC019B3-99C6-4B5F-B2D6-8325197AA0F4}": "Flat",
                   "{F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}": "<r xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\" l=\"{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}\"><r ds=\"\" id=\"{E1AF4AA3-3B5D-4611-8C71-959AD261E5B7}\" par=\"FieldName=Bloggr Text\" ph=\"bloggr-content\" uid=\"{8DA7DAF6-7CA1-4435-8DB4-3A04CE54CA24}\" /><r id=\"{73A7BD18-1385-4C05-8DD5-1AA6028EA68C}\" ph=\"bloggr-content\" uid=\"{0665489C-F2E8-4B78-B1BB-3B0CEF62CDBC}\" /></d></r>",
                 },
                 "Unversioned": {
-								},
+                },
                 "Versioned": {
                   "en": {
                     "1": {
@@ -239,7 +240,7 @@
                 }
               },
               "Children": [
-							]
+              ]
             },
           ]
         },
@@ -251,11 +252,11 @@
             "Shared": {
               "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1930BBEB-7805-471A-A3BE-4858AC7CF696}",
               "{F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}": "<r xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\" l=\"{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}\"><r cac=\"1\" ds=\"\" id=\"{E1AF4AA3-3B5D-4611-8C71-959AD261E5B7}\" par=\"FieldName=Bloggr Text\" ph=\"bloggr-content\" uid=\"{D3650095-724F-4BB4-9ECA-5159FA825AF4}\" vbd=\"1\" /><r id=\"{73A7BD18-1385-4C05-8DD5-1AA6028EA68C}\" ph=\"bloggr-content\" uid=\"{C91E54FE-B9B0-4B3E-B97D-0FCE6B487C2E}\" /></d></r>",
-              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Applications/16x16/document_plain.png",
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/document_orientation_portrait.png",
               "{F7D48A55-2158-4F02-9356-756654404F73}": "{0A65EE88-4F73-43B7-8416-F729F1A9B173}",
             },
             "Unversioned": {
-						},
+            },
             "Versioned": {
               "en": {
                 "1": {
@@ -271,11 +272,15 @@
               "TemplateID": "e269fbb5-3750-427a-9149-7aa950b49301",
               "Fields": {
                 "Shared": {
-								},
+                },
                 "Unversioned": {
-								},
+                },
                 "Versioned": {
-								}
+                  "en": {
+                    "1": {
+                    },
+                  },
+                }
               },
               "Children": [
                 {
@@ -288,12 +293,16 @@
                       "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "100",
                     },
                     "Unversioned": {
-										},
+                    },
                     "Versioned": {
-										}
+                      "en": {
+                        "1": {
+                        },
+                      },
+                    }
                   },
                   "Children": [
-									]
+                  ]
                 },
               ]
             },
@@ -329,13 +338,17 @@
           "Fields": {
             "Shared": {
               "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1267B64F-28E6-48BE-A2CD-0072B7441377}",
-              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Business/16x16/note.png",
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/edit.png",
               "{F7D48A55-2158-4F02-9356-756654404F73}": "{B696753C-1B28-4DF3-BBD9-3EA7E6349AC6}",
             },
             "Unversioned": {
-						},
+            },
             "Versioned": {
-						}
+              "en": {
+                "1": {
+                },
+              },
+            }
           },
           "Children": [
             {
@@ -344,11 +357,15 @@
               "TemplateID": "e269fbb5-3750-427a-9149-7aa950b49301",
               "Fields": {
                 "Shared": {
-								},
+                },
                 "Unversioned": {
-								},
+                },
                 "Versioned": {
-								}
+                  "en": {
+                    "1": {
+                    },
+                  },
+                }
               },
               "Children": [
                 {
@@ -363,12 +380,16 @@
                       "{BE351A73-FCB0-4213-93FA-C302D8AB4F51}": "1",
                     },
                     "Unversioned": {
-										},
+                    },
                     "Versioned": {
-										}
+                      "en": {
+                        "1": {
+                        },
+                      },
+                    }
                   },
                   "Children": [
-									]
+                  ]
                 },
                 {
                   "ID": "5b6de480-45d4-4c35-9faf-25721fe2ff57",
@@ -380,12 +401,16 @@
                       "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "200",
                     },
                     "Unversioned": {
-										},
+                    },
                     "Versioned": {
-										}
+                      "en": {
+                        "1": {
+                        },
+                      },
+                    }
                   },
                   "Children": [
-									]
+                  ]
                 },
               ]
             },
@@ -399,22 +424,22 @@
                   "{F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}": "<r xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" ><d id=\"{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}\" l=\"{97F05EE8-F8CB-48C2-98A6-BC77A7B1D46E}\"><r id=\"{3B95BA1F-2764-466E-BADB-96F18B7E1E9B}\" ph=\"bloggr-content\" uid=\"{F5963F80-5936-4E7F-8D67-F26A440C8B3F}\" /></d></r>",
                 },
                 "Unversioned": {
-								},
+                },
                 "Versioned": {
-								}
+                }
               },
               "Children": [
-							]
+              ]
             },
           ]
         },
         {
           "ID": "e03f5a52-bd90-4d35-bfd9-5486b22df5e6",
-          "Name": "Bloggr Post Folder",
+          "Name": "Post Folder",
           "TemplateID": "ab86861a-6030-46c5-b394-e8f99e8b87db",
           "Fields": {
             "Shared": {
-              "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1267B64F-28E6-48BE-A2CD-0072B7441377}",
+              "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1930BBEB-7805-471A-A3BE-4858AC7CF696}",
               "{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}": "0",
               "{9C6106EA-7A5A-48E2-8CAD-F0F693B1E2D4}": "",
               "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "Applications/16x16/folder.png",
@@ -426,7 +451,11 @@
               },
             },
             "Versioned": {
-						}
+              "en": {
+                "1": {
+                },
+              },
+            }
           },
           "Children": [
             {
@@ -466,6 +495,10 @@
             "Unversioned": {
 						},
             "Versioned": {
+              "en": {
+                "1": {
+                },
+              },
 						}
           },
           "Children": [
@@ -500,10 +533,15 @@
           "Fields": {
             "Shared": {
               "{12C33F3F-86C5-43A5-AEB4-5598CEC45116}": "{1930BBEB-7805-471A-A3BE-4858AC7CF696}",
+              "{06D5295C-ED2F-4A54-9BF2-26228D113318}": "office/16x16/elements_tree.png",
             },
             "Unversioned": {
 						},
             "Versioned": {
+              "en": {
+                "1": {
+                },
+              },
 						}
           },
           "Children": [
@@ -517,6 +555,10 @@
                 "Unversioned": {
 								},
                 "Versioned": {
+                  "en": {
+                    "1": {
+                    },
+                  },
 								}
               },
               "Children": [
@@ -533,6 +575,10 @@
                     "Unversioned": {
 										},
                     "Versioned": {
+                      "en": {
+                        "1": {
+                        },
+                      },
 										}
                   },
                   "Children": [
@@ -551,6 +597,10 @@
                     "Unversioned": {
 										},
                     "Versioned": {
+                      "en": {
+                        "1": {
+                        },
+                      },
 										}
                   },
                   "Children": [
@@ -558,10 +608,6 @@
                 },
               ]
             },
-          ]
-        },
-      ]
-    },
   ],
   "{0DE95AE4-41AB-4D01-9EB0-67441B7C2450}": [
     {
@@ -1175,10 +1221,14 @@
             },
             "Unversioned": {
               "en": {
-                "{8C980A06-4059-4939-9C6F-A10F751CEB64}": "Finished state when author's work is done and reviewer attention needed.",
+                "{8C980A06-4059-4939-9C6F-A10F751CEB64}": "The page is complete. It needs to be approved by a reviewer before it can be published.",
               },
             },
             "Versioned": {
+              "en": {
+                "1": {
+								},
+              },
 						}
           },
           "Children": [
@@ -1197,6 +1247,10 @@
                 "Unversioned": {
 								},
                 "Versioned": {
+                  "en": {
+                    "1": {
+										},
+                  },
 								}
               },
               "Children": [
@@ -1217,6 +1271,10 @@
                 "Unversioned": {
 								},
                 "Versioned": {
+              "en": {
+                "1": {
+								},
+              },
 								}
               },
               "Children": [
@@ -1237,6 +1295,10 @@
                 "Unversioned": {
 								},
                 "Versioned": {
+              "en": {
+                "1": {
+								},
+              },
 								}
               },
               "Children": [
@@ -1262,6 +1324,10 @@
               },
             },
             "Versioned": {
+              "en": {
+                "1": {
+								},
+              },
 						}
           },
           "Children": [
@@ -1279,6 +1345,10 @@
                 "Unversioned": {
 								},
                 "Versioned": {
+                  "en": {
+                    "1": {
+										},
+                  },
 								}
               },
               "Children": [
@@ -1299,6 +1369,10 @@
                 "Unversioned": {
 								},
                 "Versioned": {
+                  "en": {
+                    "1": {
+										},
+                  },
 								}
               },
               "Children": [
@@ -1319,6 +1393,10 @@
             "Unversioned": {
 						},
             "Versioned": {
+              "en": {
+                "1": {
+								},
+              },
 						}
           },
           "Children": [
@@ -1338,6 +1416,10 @@
             "Unversioned": {
 						},
             "Versioned": {
+              "en": {
+                "1": {
+								},
+              },
 						}
           },
           "Children": [
@@ -1356,6 +1438,10 @@
                 "Unversioned": {
 								},
                 "Versioned": {
+                  "en": {
+                    "1": {
+										},
+                  },
 								}
               },
               "Children": [
@@ -1376,6 +1462,10 @@
                 "Unversioned": {
 								},
                 "Versioned": {
+                  "en": {
+                    "1": {
+										},
+                  },
 								}
               },
               "Children": [
@@ -1396,15 +1486,15 @@
                 "Unversioned": {
 								},
                 "Versioned": {
+                  "en": {
+                    "1": {
+										},
+                  },
 								}
               },
               "Children": [
 							]
             },
-          ]
-        },
-      ]
-    },
   ],
   "{08477468-D438-43D4-9D6A-6D84A611971C}": [
     {

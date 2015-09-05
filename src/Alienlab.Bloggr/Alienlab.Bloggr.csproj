@@ -58,6 +58,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
@@ -66,7 +67,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Code\BloggrBlogEventHandler.cs" />
     <Compile Include="Code\BloggrContext.cs" />
     <Compile Include="Code\BloggrFactory.cs" />
     <Compile Include="Code\BloggrNoFoldersStructure.cs" />

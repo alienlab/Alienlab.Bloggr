@@ -3,9 +3,14 @@
   using System.Web.Security;
 
   using Sitecore;
+  using Sitecore.Configuration;
+  using Sitecore.Data;
+  using Sitecore.Data.Items;
+  using Sitecore.Data.Templates;
   using Sitecore.Diagnostics;
   using Sitecore.Events.Hooks;
   using Sitecore.Security.Accounts;
+  using Sitecore.SecurityModel;
 
   [UsedImplicitly]
   public class BloggrInstallHook : IHook
@@ -16,6 +21,12 @@
         "Authors",
         "Reviewers",
       };
+
+    [NotNull]
+    public static readonly string DefaultBlogSecurity = Settings.GetSetting("Bloggr.DefaultBlogSecurity", @"ar|sitecore\Bloggr Administrators - $name|pd|+item:rename|+item:admin|+item:delete|+item:create|+item:write|ar|sitecore\Bloggr Reviewers - $name|pd|+item:write|ar|sitecore\Bloggr Authors - $name|pd|+item:write|+item:create|");
+
+    [NotNull]
+    public static readonly string BlogsRoot = Settings.GetSetting("Bloggr.BlogsRoot", "/sitecore/content/blogs");
 
     [NotNull]
     public static Role EnsureAllRole([NotNull] string roleKind)
@@ -64,6 +75,53 @@
 
     public void Initialize()
     {
+      EnsureRoles();
+
+      EnsureItems();
+    }
+
+    private static void EnsureItems()
+    {
+      using (new SecurityDisabler())
+      {
+        var database = Factory.GetDatabase("master");
+        var blogsItem = database.GetItem(BlogsRoot);
+        if (blogsItem == null)
+        {
+          var content = database.GetItem(ItemIDs.ContentRoot);
+          Assert.IsNotNull(content, "/sitecore/content item is missing");
+
+          blogsItem = content.Add("Blogs", new TemplateID(TemplateIDs.Node));
+          Assert.IsNotNull(blogsItem, "/sitecore/content/blogs item wasn't created");
+        }
+
+        var blogItems = blogsItem.Children;
+        Assert.IsNotNull(blogItems, "blogItems");
+
+        foreach (var blogName in BloggrFactory.GetBlogNames())
+        {
+          var blogItem = blogItems[blogName];
+          if (blogItem == null)
+          {
+            blogItem = blogsItem.Add(blogName, new BranchId(ID.Parse("{15FA2775-5BFA-43C5-91E7-A3581448D0B2}")));
+            Assert.IsNotNull(blogItem, "/sitecore/content/blogs/$name item wasn't created");
+          }
+
+          if (!string.IsNullOrEmpty(blogItem[FieldIDs.Security]))
+          {
+            continue;
+          }
+
+          using (new EditContext(blogItem))
+          {
+            blogItem[FieldIDs.Security] = DefaultBlogSecurity.Replace("$name", blogName);
+          }
+        }
+      }
+    }
+
+    private static void EnsureRoles()
+    {
       // ensure "sitecore\Bloggr All Users" -> "sitecore\Authors"
       var allUsersRole = EnsureAllUsersRole();
 
@@ -73,7 +131,7 @@
       var globalAdminsExists = Role.Exists(globalAdmins);
       if (!globalAdminsExists)
       {
-        Log.Info("Creating role: " + globalAdmins, this);
+        Log.Info("Creating role: " + globalAdmins, typeof(BloggrInstallHook));
         Roles.CreateRole(globalAdmins);
       }
 
@@ -85,7 +143,7 @@
         RolesInRolesManager.AddRoleToRole(globalAdminsRole, allUsersRole);
       }
 
-      var blogNames = BloggrFactory.GetBlogs();
+      var blogNames = BloggrFactory.GetBlogNames();
 
       foreach (var roleKind in RoleKinds)
       {
